@@ -16,7 +16,7 @@ export default function Header() {
   const pathname = usePathname();
 
   const links = {
-    '': '/',
+
     'TEAM': '/#team',
     'FAQ': '/#freq'
 

@@ -145,7 +145,7 @@ export default function Page() {
 
         <Image src={lightOn ? '/button_open.png' : '/button_closed.png'} width={620} height={213} className='w-[100px] lg:w-[150px] h-auto object-contain absolute right-[20px] lg:right-[55px] top-[100px] cursor-pointer' onClick={() => setLightOn(!lightOn)} />
         <div className='relative w-full'>
-          <Image className='w-full h-full relative top-[-100px] lg:top-[-150px] xl:top-[-250px] z-[9] object-contain' src='/leaves.png' width='1920' height='1080' />
+          <Image className='w-full h-full relative top-[-60px] lg:top-[-150px] xl:top-[-260px] z-[9] object-contain' src='/leaves.png' width='1920' height='1080' />
           <div className='z-[10] absolute -top-[100px] sm:top-[100px] w-full h-max flex flex-col items-center px-4 sm:px-0'>
             <motion.h1 className='text-center text-5xl font-bold font-BecauseYouWereHome tracking-[5px] leading-[80px] text-[#38F7A1] green-glow mt-[350px] whitespace-nowrap ' initial={{ opacity: 0, y: -100 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, ease: 'easeInOut' }}>
               MINTING DATE<br />
@@ -164,7 +164,7 @@ export default function Page() {
               }}>
 
                 <div className='flex flex-col gap-y-4 w-full max-w-[650px] items-center sticky top-[5%]' ref={ref}>
-                  <div className='w-[300px] h-[300px] lg:w-[600px] lg:h-[600px] mt-20 relative group'>
+                  <div className='w-[300px] h-[300px] lg:w-[600px] lg:h-[750px] mt-20 relative group'>
                     {a == 0 && <Image src='/person/1.png' width='600' height='600' className='absolute top-0 object-contain ' style={{ zIndex: 41 }} />}
 
                     <Image src='/borderson4.png' width={686} height={678} className='pointer-events-none absolute  z-[90] w-[300px] h-[300px] lg:w-[570px] lg:h-[570px] scale-[1.3] lg:ml-4 lg:mt-4 ' />
@@ -298,8 +298,8 @@ export default function Page() {
                         </filter>
                       </defs>
                     </svg>
-                    <button id="gooey-button" className='mt-8'>
-                      Galery
+                    <div id="gooey-button" className='mt-8 h-18 w-24 font-BecauseYouWereHome w-[60px] text-center after:content-["GALLERY"] hover:after:content-["SOON"] tracking-[1px] transition-colors relative cursor-not-allowed select-none '>
+
                       <span className="bubbles">
                         <span className="bubble"></span>
                         <span className="bubble"></span>
@@ -312,7 +312,8 @@ export default function Page() {
                         <span className="bubble"></span>
                         <span className="bubble"></span>
                       </span>
-                    </button>
+                    </div>
+
                   </div>
                 </div>
                 <div className='relative flex w-max h-max rotate-[3deg] top-[120px] lg:top-[180px] z-[9]'>
@@ -463,8 +464,8 @@ export default function Page() {
                   <div className='flex flex-col items-center w-full gap-y-8'>
                     <div className='relative '>
                       <Image src='/Logo3Dpng.png' width={1000} height={1000} className='w-[612px] h-[350px] relative mt-24 lg:mt-8   ' />
-                      <Image src='/popupbubble.png' width={250} height={250} className='absolute -right-[150px] top-[45px] 2xl:flex hidden' />
-                      <Image src='/skull.png' width={700} height={700} className='absolute -right-[600px] -top-[20px] scale-x-[-1] 2xl:flex hidden' />
+                      <Image src='/popupbubble.png' width={350} height={350} className='absolute -right-[250px] top-[105px] 2xl:flex hidden' />
+                      <Image src='/skull.png' width={1000} height={1000} className='absolute -right-[600px] top-[300px] scale-x-[-1] 2xl:flex hidden' />
                     </div>
 
                     <p className='banlancedText max-w-[540px] font-medium text-sm lg:text-lg -mt-[40px] text-justify px-4 2xl:px-0 '>
@@ -487,8 +488,8 @@ export default function Page() {
                         </filter>
                       </defs>
                     </svg>
-                    <button id="gooey-button" className='mt-8 h-18 w-24'>
-                      Galery
+                    <div id="gooey-button" className='mt-8 h-18 w-24 font-BecauseYouWereHome w-[60px] text-center after:content-["GALLERY"] hover:after:content-["SOON"] tracking-[1px] transition-colors relative cursor-not-allowed select-none '>
+
                       <span className="bubbles">
                         <span className="bubble"></span>
                         <span className="bubble"></span>
@@ -501,7 +502,7 @@ export default function Page() {
                         <span className="bubble"></span>
                         <span className="bubble"></span>
                       </span>
-                    </button>
+                    </div>
                   </div>
                 </div>
                 <div className='relative flex w-max h-max rotate-[3deg] top-[120px] lg:top-[180px] z-[9] '>
