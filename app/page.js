@@ -12,6 +12,8 @@ import TeamMember from '@/components/teammember';
 import { MdClose } from 'react-icons/md';
 import { LuChevronRight } from 'react-icons/lu';
 import { FaDiscord } from 'react-icons/fa';
+import MyComponent from '@/components/altasker';
+
 export default function Page() {
   const [lightOn, setLightOn] = useState(false);
   const [activeTab, setActiveTab] = useState(null);
@@ -163,7 +165,7 @@ export default function Page() {
                 backgroundRepeat: 'no-repeat'
               }}>
 
-                <div className='flex flex-col gap-y-4 w-full max-w-[650px] items-center sticky top-[5%]' ref={ref}>
+                <div className='flex flex-col gap-y-4 w-full max-w-[650px] items-center sticky top-[15%] xl:top-[10%]' ref={ref}>
                   <div className='w-[300px] h-[300px] lg:w-[600px] lg:h-[750px] mt-20 relative group'>
                     {a == 0 && <Image src='/person/1.png' width='600' height='600' className='absolute top-0 object-contain ' style={{ zIndex: 41 }} />}
 
@@ -272,12 +274,12 @@ export default function Page() {
                   <Image src='/ewilhero.png' width={780} height={780} objectFit='cover' className='hidden xl:block w-[680px] h-[680px] top-[100px] xl:left-0 2xl:left-[100px] relative z-[10]' />
                   <div className='flex flex-col items-center w-full gap-y-8'>
                     <div className='relative'>
-                      <Image src='/Logo3Dpng.png' width={612} height={350} className='w-[612px] h-[270px] relative mt-48 lg:mt-8' />
+                      <Image src='/Logo3Dpng.png' width={612} height={350} className='w-[612px] h-[270px] relative mt-40 lg:mt-8' />
                       <Image src='/popupbubble.png' width={250} height={250} className='absolute -right-[150px] top-[45px] 2xl:flex hidden' />
                       <Image src='/skull.png' width={700} height={700} className='absolute -right-[600px] -top-[20px] scale-x-[-1] 2xl:flex hidden' />
                     </div>
 
-                    <p className='banlancedText max-w-[540px] font-medium text-sm lg:text-lg -mt-[40px] text-justify px-4 2xl:px-0 '>
+                    <p className='banlancedText max-w-[540px] font-medium text-sm lg:text-lg mt-[20px] text-justify px-4 2xl:px-0 '>
                       Immerse yourself in the legacy of the 'Evil Wizards,' where every NFT is a gateway to a long line of powerful ancestors. Each wizard in this exclusive collection represents a piece of a centuries-old family saga, rich with evil magic and curses. By owning a piece of this collection, you don't just acquire a digital collectible; you become part of a lineage of an untold prophecy. Join now and be part of the master plan!
                     </p>
 
@@ -417,7 +419,7 @@ export default function Page() {
                   </h2>
                 </div>
               </div>
-              <div><Image src='/ctu.png' width='190' height='500' className='object-contain z-[12] relative opacity-[1] mr-10' style={{ top: '-105px', marginBottom: '-400px' }} /></div>
+              <a href="discordlink" target="_blank" rel="noopener noreferrer"><Image src='/ctu.png' width='190' height='500' className='object-contain z-[12] relative opacity-[1] mr-10' style={{ top: '-105px', marginBottom: '-400px' }} /></a>
             </div></>
         ) : (
           <>
@@ -608,7 +610,7 @@ export default function Page() {
                   </h2>
                 </div>
               </div>
-              <div><Image src='/ctu.png' width='700' height='500' className='object-contain z-[12] relative opacity-[1] mr-10' style={{ top: '-420px', marginBottom: '-500px' }} /></div>
+              <MyComponent />
             </div></>
         )}
 
