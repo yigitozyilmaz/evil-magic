@@ -154,7 +154,7 @@ export default function Page() {
               XX : XX : 2024
             </motion.h1>
             <motion.p className='banlancedText text-sm font-medium max-w-[600px] text-justify mt-[50px]' initial={{ opacity: 0, y: -100 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, ease: 'easeInOut' }}>
-              Being wickedly brilliant is the norm here, not the exception. Join our mischievous coven of resurrected ancestors, each more delightfully narcissistic than the last. It's more than just an NFT collection; it's a family reunion with a cursed twist.
+              Being wickedly brilliant is the norm here, not the exception. Join our mischievous coven of resurrected ancestors, each more delightfully narcissistic than the last. <br></br>  <br></br>It's more than just an NFT collection; it's a family reunion with a cursed twist.
             </motion.p>
             <Image className=' top-[250px]  relative z-[9] object-contain' src='/wizard.png' width='174' height='116' />
             <div className='flex flex-row  lg:flex-row px-8 lg:px-0 gap-[60px] w-full mt-[300px] h-[100vh] lg:h-[200vh] relative'>
@@ -167,28 +167,29 @@ export default function Page() {
 
                 <div className='flex flex-col gap-y-4 w-full max-w-[650px] items-center sticky top-[15%] xl:top-[10%]' ref={ref}>
                   <div className='w-[300px] h-[300px] lg:w-[600px] lg:h-[750px] mt-20 relative group'>
-                    {a == 0 && <Image src='/person/1.png' width='600' height='600' className='absolute top-0 object-contain ' style={{ zIndex: 41 }} />}
+                    {a >= 0 && <Image src='/person/1.png' width='600' height='600' className='absolute top-0 object-contain ' style={{ zIndex: 30 }} />}
 
                     <Image src='/borderson4.png' width={686} height={678} className='pointer-events-none absolute  z-[90] w-[300px] h-[300px] lg:w-[570px] lg:h-[570px] scale-[1.3] lg:ml-4 lg:mt-4 ' />
-                    {a == 1 && <Image src='/person/2.png' width='600' height='600' className='absolute top-0 object-contain ' style={{ zIndex: 41 }} />}
-                    {(a == 1) && <motion.div className='flex justify-end pointer-events-none items-center h-[600px] fixed mt-32 w-full right-4 bottom-[-200px] z-[99] ' initial={{ opacity: 0, x: 100 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: 100 }} transition={{ duration: 0.25, ease: 'easeInOut' }}>
+                    {a >= 1 && <Image src='/person/2.png' width='600' height='600' className='absolute top-0 object-contain ' style={{ zIndex: 41 }} />}
+                    {(a >= 1) && <motion.div className='flex justify-end pointer-events-none items-center h-[600px] fixed mt-32 w-full right-4 bottom-[-200px] z-[99] ' initial={{ opacity: 0, x: 100 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: 100 }} transition={{ duration: 0.25, ease: 'easeInOut' }}>
                     </motion.div>}
-                    {a == 2 && <Image src='/person/3.png' width='600' height='600' className='absolute top-0 object-contain ' style={{ zIndex: 41 }} />}
+                    {a >= 2 && <Image src='/person/3.png' width='600' height='600' className='absolute top-0 object-contain ' style={{ zIndex: 42 }} />}
+                    {a >= 2 && <Image src='/person/3.1.png' width='600' height='600' className='absolute top-0 object-contain ' style={{ zIndex: 40 }} />}
                     {(a == 2) && <motion.div className='flex justify-start pointer-events-none items-center h-[600px] fixed mt-32 w-full left-4 bottom-[-200px] z-[99]' initial={{ opacity: 0, x: -100 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -100 }} transition={{ duration: 0.25, ease: 'easeInOut' }}>
                     </motion.div>}
-                    {a == 3 && <Image src='/person/4.png' width='600' height='600' className='absolute top-0 object-contain ' style={{ zIndex: 41 }} />}
+                    {a >= 3 && <Image src='/person/4.png' width='600' height='600' className='absolute top-0 object-contain ' style={{ zIndex: 41 }} />}
                     {(a == 3) && <motion.div className='flex justify-end pointer-events-none items-center h-[600px] fixed mt-32 w-full right-4 bottom-[-200px] z-[99]' initial={{ opacity: 0, x: 100 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: 100 }} transition={{ duration: 0.25, ease: 'easeInOut' }}>
                     </motion.div>}
-                    {a == 4 && <Image src='/person/5.png' width='600' height='600' className='absolute top-0 object-contain ' style={{ zIndex: 41 }} />}
+                    {a >= 4 && <Image src='/person/5.png' width='600' height='600' className='absolute top-0 object-contain ' style={{ zIndex: 40 }} />}
                     {(a == 4) && <motion.div className='flex justify-start pointer-events-none items-center h-[600px] fixed mt-32 w-full left-4 bottom-[-200px] z-[99]' initial={{ opacity: 0, x: -100 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -100 }} transition={{ duration: 0.25, ease: 'easeInOut' }}>
                     </motion.div>}
-                    {a == 5 && <Image src='/person/6.png' width='600' height='600' className='absolute top-0 object-contain ' style={{ zIndex: 41 }} />}
+                    {a >= 5 && <Image src='/person/6.png' width='600' height='600' className='absolute top-0 object-contain ' style={{ zIndex: 41 }} />}
                     {(a == 5) && <motion.div className='flex justify-end pointer-events-none items-center h-[600px] fixed mt-32 w-full right-4 bottom-[-200px] z-[99]' initial={{ opacity: 0, x: 100 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: 100 }} transition={{ duration: 0.25, ease: 'easeInOut' }}>
                     </motion.div>}
-                    {a == 6 && <Image src='/person/7.png' width='600' height='600' className='absolute top-0 object-contain ' style={{ zIndex: 41 }} />}
+                    {a >= 6 && <Image src='/person/7.png' width='600' height='600' className='absolute top-0 object-contain ' style={{ zIndex: 41 }} />}
                     {(a == 6) && <motion.div className='flex justify-start pointer-events-none items-center h-[600px] fixed mt-32 w-full left-4 bottom-[-200px] z-[99]' initial={{ opacity: 0, x: -100 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -100 }} transition={{ duration: 0.25, ease: 'easeInOut' }}>
                     </motion.div>}
-                    {a == 7 && <Image src='/person/8.png' width='600' height='600' className='absolute top-0 object-contain ' style={{ zIndex: 1 }} />}
+                    {a >= 7 && <Image src='/person/8.png' width='600' height='600' className='absolute top-0 object-contain ' style={{ zIndex: 43 }} />}
                     {(a == 7) && <motion.div className='flex justify-end pointer-events-none items-center h-[600px] fixed mt-32 w-full right-4 bottom-[-200px] z-[99]' initial={{ opacity: 0, x: 100 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: 100 }} transition={{ duration: 0.25, ease: 'easeInOut' }}>
                     </motion.div>}
                   </div>
@@ -425,7 +426,7 @@ export default function Page() {
           <>
             <div className='flex h-max w-full flex-col items-center justify-center mt-[310vh] lg:mt-[240vh]'>
               <div className='z-[10] w-full relative bg-[#00001d] flex flex-col gap-y-14 mt-[1200px] pt-[10rem] sm:pt-0 text-white'>
-                <div className='absolute -top-[800px] w-full h-[800px] md:-top-[660px]  bg-gradient-to-b from-transparent z-[-10] via-[#00001d] to-[#00001d]'></div>
+                <div className='absolute -top-[800px] w-full h-[950px] md:-top-[860px]  bg-gradient-to-b from-transparent z-[-10] via-[#00001d] to-[#00001d]'></div>
                 <div className='relative flex w-max h-max rotate-[-4deg] bottom-[300px]'>
                   <div className='slides-to-right'>
                     <Image src='/slide1/1.png' width={657} height={626} objectFit='cover' className='w-[260px] h-[250px]' />
@@ -466,8 +467,8 @@ export default function Page() {
                   <div className='flex flex-col items-center w-full gap-y-8'>
                     <div className='relative '>
                       <Image src='/Logo3Dpng.png' width={1000} height={1000} className='w-[612px] h-[350px] relative mt-24 lg:mt-8   ' />
-                      <Image src='/popupbubble.png' width={350} height={350} className='absolute -right-[250px] top-[105px] 2xl:flex hidden' />
-                      <Image src='/skull.png' width={1000} height={1000} className='absolute -right-[600px] top-[300px] scale-x-[-1] 2xl:flex hidden' />
+                      <Image src='/popupbubble.png' width={350} height={350} className='absolute -right-[200px] top-[105px] 2xl:flex hidden' />
+                      <Image src='/skull.png' width={1000} height={1000} className='absolute -right-[600px] top-[160px] scale-x-[-1] 2xl:flex hidden' />
                     </div>
 
                     <p className='banlancedText max-w-[540px] font-medium text-sm lg:text-lg -mt-[40px] text-justify px-4 2xl:px-0 '>
