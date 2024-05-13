@@ -466,7 +466,7 @@ export default function Page() {
                   <Image src='/ewilhero.png' width={780} height={780} objectFit='cover' className='hidden xl:block w-[680px] h-[680px] top-[100px] xl:left-0 2xl:left-[100px] relative z-[10]' />
                   <div className='flex flex-col items-center w-full gap-y-8'>
                     <div className='relative '>
-                      <Image src='/Logo3Dpng.png' width={1000} height={1000} className='w-[612px] h-[350px] relative mt-24 lg:mt-8   ' />
+                      <Image src='/Logo3Dpng.png' width={1000} height={1000} className='w-[612px] h-[350px] relative mt-24 lg:mt-16   ' />
                       <Image src='/popupbubble.png' width={350} height={350} className='absolute -right-[200px] top-[105px] 2xl:flex hidden' />
                       <Image src='/skull.png' width={1000} height={1000} className='absolute -right-[600px] top-[160px] scale-x-[-1] 2xl:flex hidden' />
                     </div>
