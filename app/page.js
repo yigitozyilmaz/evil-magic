@@ -181,6 +181,7 @@ export default function Page() {
                     {(a == 3) && <motion.div className='flex justify-end pointer-events-none items-center h-[600px] fixed mt-32 w-full right-4 bottom-[-200px] z-[99]' initial={{ opacity: 0, x: 100 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: 100 }} transition={{ duration: 0.25, ease: 'easeInOut' }}>
                     </motion.div>}
                     {a >= 4 && <Image src='/person/5.png' width='600' height='600' className='absolute top-0 object-contain ' style={{ zIndex: 40 }} />}
+                    {a >= 4 && <Image src='/person/5.1.png' width='600' height='600' className='absolute top-0 object-contain ' style={{ zIndex: 42 }} />}
                     {(a == 4) && <motion.div className='flex justify-start pointer-events-none items-center h-[600px] fixed mt-32 w-full left-4 bottom-[-200px] z-[99]' initial={{ opacity: 0, x: -100 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -100 }} transition={{ duration: 0.25, ease: 'easeInOut' }}>
                     </motion.div>}
                     {a >= 5 && <Image src='/person/6.png' width='600' height='600' className='absolute top-0 object-contain ' style={{ zIndex: 41 }} />}
@@ -189,7 +190,8 @@ export default function Page() {
                     {a >= 6 && <Image src='/person/7.png' width='600' height='600' className='absolute top-0 object-contain ' style={{ zIndex: 41 }} />}
                     {(a == 6) && <motion.div className='flex justify-start pointer-events-none items-center h-[600px] fixed mt-32 w-full left-4 bottom-[-200px] z-[99]' initial={{ opacity: 0, x: -100 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -100 }} transition={{ duration: 0.25, ease: 'easeInOut' }}>
                     </motion.div>}
-                    {a >= 7 && <Image src='/person/8.png' width='600' height='600' className='absolute top-0 object-contain ' style={{ zIndex: 43 }} />}
+                    {a >= 7 && <Image src='/person/8.png' width='600' height='600' className='absolute top-0 object-contain ' style={{ zIndex: 62 }} />}
+                    {a >= 7 && <Image src='/person/8.1.png' width='600' height='600' className='absolute top-0 object-contain ' style={{ zIndex: 29 }} />}
                     {(a == 7) && <motion.div className='flex justify-end pointer-events-none items-center h-[600px] fixed mt-32 w-full right-4 bottom-[-200px] z-[99]' initial={{ opacity: 0, x: 100 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: 100 }} transition={{ duration: 0.25, ease: 'easeInOut' }}>
                     </motion.div>}
                   </div>
@@ -374,15 +376,14 @@ export default function Page() {
                   </p>
 
                   <div className='flex flex-wrap max-w-[1000px] items-center justify-center gap-12'>
-                    <TeamMember name='ERIM CAKIR' imagePath='/team.png' q position='CEO' linkedIn='https://www.linkedin.com' description='Lorem ipsum dolor sit amet, consectetur adipisicing elit. At consectetur doloremque esse hic illum molestiae porro provident veritatis!' />
-                    <TeamMember name='ERIM CAKIR' imagePath='/team.png' q position='CEO' linkedIn='https://www.linkedin.com' description='Lorem ipsum dolor sit amet, consectetur adipisicing elit. At consectetur doloremque esse hic illum molestiae porro provident veritatis!' />
-                    <TeamMember name='ERIM CAKIR' imagePath='/team.png' q position='CEO' linkedIn='https://www.linkedin.com' description='Lorem ipsum dolor sit amet, consectetur adipisicing elit. At consectetur doloremque esse hic illum molestiae porro provident veritatis!' />
-                    <TeamMember name='ERIM CAKIR' imagePath='/team.png' q position='CEO' linkedIn='https://www.linkedin.com' description='Lorem ipsum dolor sit amet, consectetur adipisicing elit. At consectetur doloremque esse hic illum molestiae porro provident veritatis!' />
-                    <TeamMember name='ERIM CAKIR' imagePath='/team.png' q position='CEO' linkedIn='https://www.linkedin.com' description='Lorem ipsum dolor sit amet, consectetur adipisicing elit. At consectetur doloremque esse hic illum molestiae porro provident veritatis!' />
-                    <TeamMember name='ERIM CAKIR' imagePath='/team.png' q position='CEO' linkedIn='https://www.linkedin.com' description='Lorem ipsum dolor sit amet, consectetur adipisicing elit. At consectetur doloremque esse hic illum molestiae porro provident veritatis!' />
-                    <TeamMember name='ERIM CAKIR' imagePath='/team.png' q position='CEO' linkedIn='https://www.linkedin.com' description='Lorem ipsum dolor sit amet, consectetur adipisicing elit. At consectetur doloremque esse hic illum molestiae porro provident veritatis!' />
-                    <TeamMember name='ERIM CAKIR' imagePath='/team.png' q position='CEO' linkedIn='https://www.linkedin.com' description='Lorem ipsum dolor sit amet, consectetur adipisicing elit. At consectetur doloremque esse hic illum molestiae porro provident veritatis!' />
-                    <TeamMember name='ERIM CAKIR' imagePath='/team.png' q position='CEO' linkedIn='https://www.linkedin.com' description='Lorem ipsum dolor sit amet, consectetur adipisicing elit. At consectetur doloremque esse hic illum molestiae porro provident veritatis!' />
+                    <TeamMember name='Royal Dead' imagePath='/team.png' q position='CEO' linkedIn='https://www.linkedin.com' />
+                    <TeamMember name='Wolffe' imagePath='/team.png' q position='CEO' linkedIn='https://www.linkedin.com' />
+                    <TeamMember name='Lev VercettI' imagePath='/team.png' q position='Partnerships' linkedIn='https://www.linkedin.com' />
+                    <TeamMember name='OldnIcker' imagePath='/team.png' q position='Marketing' linkedIn='https://www.linkedin.com' />
+                    <TeamMember name='ERIM CAKIR' imagePath='/team.png' q position='CEO' linkedIn='https://www.linkedin.com' />
+                    <TeamMember name='ERIM CAKIR' imagePath='/team.png' q position='CEO' linkedIn='https://www.linkedin.com' />
+                    <TeamMember name='ERIM CAKIR' imagePath='/team.png' q position='CEO' linkedIn='https://www.linkedin.com' />
+                    <TeamMember name='ERIM CAKIR' imagePath='/team.png' q position='CEO' linkedIn='https://www.linkedin.com' />
                   </div>
                   <div className='absolute mt-[1200px] w-full h-[800px]  bg-gradient-to-b from-transparent z-[-10] via-[#00001d] to-[#00001d]'></div>
                 </div>
@@ -564,21 +565,21 @@ export default function Page() {
                   </p>
 
                   <div className='flex flex-wrap max-w-[1000px] items-center justify-center gap-12'>
-                    <TeamMember name='ERIM CAKIR' imagePath='/team.png' q position='CEO' linkedIn='https://www.linkedin.com' description='Lorem ipsum dolor sit amet, consectetur adipisicing elit. At consectetur doloremque esse hic illum molestiae porro provident veritatis!' />
-                    <TeamMember name='ERIM CAKIR' imagePath='/team.png' q position='CEO' linkedIn='https://www.linkedin.com' description='Lorem ipsum dolor sit amet, consectetur adipisicing elit. At consectetur doloremque esse hic illum molestiae porro provident veritatis!' />
-                    <TeamMember name='ERIM CAKIR' imagePath='/team.png' q position='CEO' linkedIn='https://www.linkedin.com' description='Lorem ipsum dolor sit amet, consectetur adipisicing elit. At consectetur doloremque esse hic illum molestiae porro provident veritatis!' />
-                    <TeamMember name='ERIM CAKIR' imagePath='/team.png' q position='CEO' linkedIn='https://www.linkedin.com' description='Lorem ipsum dolor sit amet, consectetur adipisicing elit. At consectetur doloremque esse hic illum molestiae porro provident veritatis!' />
-                    <TeamMember name='ERIM CAKIR' imagePath='/team.png' q position='CEO' linkedIn='https://www.linkedin.com' description='Lorem ipsum dolor sit amet, consectetur adipisicing elit. At consectetur doloremque esse hic illum molestiae porro provident veritatis!' />
-                    <TeamMember name='ERIM CAKIR' imagePath='/team.png' q position='CEO' linkedIn='https://www.linkedin.com' description='Lorem ipsum dolor sit amet, consectetur adipisicing elit. At consectetur doloremque esse hic illum molestiae porro provident veritatis!' />
-                    <TeamMember name='ERIM CAKIR' imagePath='/team.png' q position='CEO' linkedIn='https://www.linkedin.com' description='Lorem ipsum dolor sit amet, consectetur adipisicing elit. At consectetur doloremque esse hic illum molestiae porro provident veritatis!' />
-                    <TeamMember name='ERIM CAKIR' imagePath='/team.png' q position='CEO' linkedIn='https://www.linkedin.com' description='Lorem ipsum dolor sit amet, consectetur adipisicing elit. At consectetur doloremque esse hic illum molestiae porro provident veritatis!' />
-                    <TeamMember name='ERIM CAKIR' imagePath='/team.png' q position='CEO' linkedIn='https://www.linkedin.com' description='Lorem ipsum dolor sit amet, consectetur adipisicing elit. At consectetur doloremque esse hic illum molestiae porro provident veritatis!' />
+                    <TeamMember name='Royal Dead' imagePath='/team.png' q position='CEO' linkedIn='https://www.linkedin.com' />
+                    <TeamMember name='Wolffe' imagePath='/team.png' q position='ART DIRECTOR' linkedIn='https://www.linkedin.com' />
+                    <TeamMember name='Lev VercettI' imagePath='/team.png' q position='PARTNERSHIP' linkedIn='https://www.linkedin.com' />
+                    <TeamMember name='OldnIcker' imagePath='/team.png' q position='MARKETING' linkedIn='https://www.linkedin.com' />
+                    <TeamMember name='SACRED' imagePath='/team.png' q position='TECHNICAL' linkedIn='https://www.linkedin.com' />
+                    <TeamMember name='ERIM CAKIR' imagePath='/team.png' q position='CEO' linkedIn='https://www.linkedin.com' />
+                    <TeamMember name='ERIM CAKIR' imagePath='/team.png' q position='CEO' linkedIn='https://www.linkedin.com' />
+                    <TeamMember name='ERIM CAKIR' imagePath='/team.png' q position='CEO' linkedIn='https://www.linkedin.com' />
+                    <TeamMember name='ERIM CAKIR' imagePath='/team.png' q position='CEO' linkedIn='https://www.linkedin.com' />
                   </div>
-                  <div className='absolute mt-[1200px] w-full h-[800px] bg-gradient-to-b from-transparent z-[-10] via-[#00001d] to-[#00001d]'></div>
+                  <div className='absolute mt-[1200px] w-full h-[1150px] bg-gradient-to-b from-transparent z-[-10] via-[#00001d] to-[#00001d]'></div>
                 </div>
 
               </div>
-              <div className='mt-[1000px]'> <h1 className='font-BecauseYouWereHome text-5xl leading-[60px] text-center lg:text-7xl tracking-[5px] lg:leading-[100px]' id='freq'>
+              <div className='mt-[800px]'> <h1 className='font-BecauseYouWereHome text-5xl leading-[60px] text-center lg:text-7xl tracking-[5px] lg:leading-[100px]' id='freq'>
                 FREQUENTLY ASKED QUESTIONS
               </h1>
 
