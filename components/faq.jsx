@@ -5,6 +5,13 @@ import { twMerge } from 'tailwind-merge';
 export default function FaQ({ q, a }) {
   const [isOpen, setIsOpen] = useState(false);
 
+  const renderAnswer = (answer) => {
+    const items = answer.split(/\n|•/).filter(item => item.trim() !== '');
+    return items.map((item, index) => (
+      <li key={index}>{item.trim()}</li>
+    ));
+  };
+
   return (
     <div className={twMerge(
       'flex gap-y-2 rounded-lg transition-all flex-col bg-[#3effc810]',
@@ -24,7 +31,9 @@ export default function FaQ({ q, a }) {
         'flex flex-col gap-y-2 transition-all pb-4 px-4 opacity-0 max-h-0 overflow-hidden cursor-text',
         isOpen ? 'opacity-100 max-h-[30vh]' : '-mt-7 pointer-events-none'
       )}>
-        {a}
+        <ul className="list-disc pl-5">
+          {renderAnswer(a)}
+        </ul>
       </div>
     </div>
   );

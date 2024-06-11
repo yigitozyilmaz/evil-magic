@@ -23,10 +23,10 @@ export default function Header() {
   };
 
   const socials = {
-    'https://twitter.com': <FaXTwitter className='hover:text-[#00ff80] transition-colors cursor-pointer' />,
-    'https://medium.com': <FaMedium className='hover:text-[#00ff80] transition-colors cursor-pointer' />,
-    'https://youtube.com': <FaYoutube className='hover:text-[#00ff80] transition-colors cursor-pointer' />,
-    'https://discord.com': <FaDiscord className='hover:text-[#00ff80] transition-colors cursor-pointer' />
+    'https://x.com/evilwizardsNFT': <FaXTwitter className='hover:text-[#00ff80] transition-colors cursor-pointer' />,
+    'https://medium.com/@evilwizardsNFT': <FaMedium className='hover:text-[#00ff80] transition-colors cursor-pointer' />,
+    'https://www.youtube.com/channel/UCUu_jwb8PZDU1sDe-Nx-4YA': <FaYoutube className='hover:text-[#00ff80] transition-colors cursor-pointer' />,
+    '/discordlink': <FaDiscord className='hover:text-[#00ff80] transition-colors cursor-pointer' />
 
   };
 

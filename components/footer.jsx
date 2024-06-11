@@ -13,12 +13,12 @@ export default function Footer() {
   };
 
   const socials = {
-    'https://twitter.com': FaXTwitter,
+    'https://x.com/evilwizardsNFT': FaXTwitter,
     //'https://instagram.com': FiInstagram,
     //'https://linkedin.com': FaLinkedin,
-    'https://medium.com': FaMedium,
-    'https://youtube.com': FaYoutube,
-    'https://discord.com': FaDiscord
+    'https://medium.com/@evilwizardsNFT': FaMedium,
+    'https://www.youtube.com/channel/UCUu_jwb8PZDU1sDe-Nx-4YA': FaYoutube,
+    '/discordlink': FaDiscord
   };
 
   function SocialIcon({ Icon, href }) {

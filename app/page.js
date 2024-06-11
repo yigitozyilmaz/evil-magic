@@ -21,9 +21,6 @@ export default function Page() {
   const isTablet = useMedia('(max-width: 1023px)');
   const [popupIsOpen, setPopupIsOpen] = useState(false);
   const [email, setEmail] = useState('');
-
-
-
   const [data, setData] = useState({
     'Hair': null,
     'Hat': null,
@@ -46,27 +43,36 @@ export default function Page() {
     if (emailIsSent !== 'true') wait(500).then(() => setPopupIsOpen(true));
   }, []);
 
-  async function sendEmail() {
+  const sendEmail = async (email) => {
     try {
-      const response = await fetch('/api/email/' + encodeURIComponent(email), {
+      const response = await fetch(`/api/email/${encodeURIComponent(email)}/route`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({
-          email,
-        }),
       });
-      const data = await response.text();
-      if (data === 'OK') {
+      const data = await response.json();
+      if (response.ok) {
         setEmail('');
         setPopupIsOpen(false);
         setEmailIsSent('true');
+      } else {
+        console.error('Error:', data);
       }
     } catch (error) {
-      return console.error(error);
+      console.error('Error:', error);
     }
-  }
+  };
+
+  // Örnek kullanım
+
+
+
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    sendEmail();
+  };
 
 
   useEffect(() =>
@@ -394,12 +400,16 @@ export default function Page() {
                 FREQUENTLY ASKED QUESTIONS
               </h1>
               <div className='flex flex-col gap-4 max-w-[800px] mt-24 w-full h-full px-8'>
-                <FaQ q='Lorem ipsum dolor sit amet?' a='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, adipisci aliquam deserunt dolorem eius est expedita fugit in, incidunt minima optio porro quaerat quas quasi rem reprehenderit sed suscipit velit.' />
-                <FaQ q='Lorem ipsum dolor sit amet?' a='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, adipisci aliquam deserunt dolorem eius est expedita fugit in, incidunt minima optio porro quaerat quas quasi rem reprehenderit sed suscipit velit.' />
-                <FaQ q='Lorem ipsum dolor sit amet?' a='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, adipisci aliquam deserunt dolorem eius est expedita fugit in, incidunt minima optio porro quaerat quas quasi rem reprehenderit sed suscipit velit.' />
-                <FaQ q='Lorem ipsum dolor sit amet?' a='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, adipisci aliquam deserunt dolorem eius est expedita fugit in, incidunt minima optio porro quaerat quas quasi rem reprehenderit sed suscipit velit.' />
-                <FaQ q='Lorem ipsum dolor sit amet?' a='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, adipisci aliquam deserunt dolorem eius est expedita fugit in, incidunt minima optio porro quaerat quas quasi rem reprehenderit sed suscipit velit.' />
-                <FaQ q='Lorem ipsum dolor sit amet?' a='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, adipisci aliquam deserunt dolorem eius est expedita fugit in, incidunt minima optio porro quaerat quas quasi rem reprehenderit sed suscipit velit.' />
+                <FaQ q='What is the Evil Wizards NFT Collection?' a='The Evil Wizards NFT Collection is part of a new brand called Evil Magic, which is heavily focused on creating a culture and intellectual property (IP). The NFT collection serves as a premium subscription model that connects the brands by-products, including games and other content, offering users exclusive privileges in both digital and physical realms. Additionally, it aims to create an inner circle for the brand itself.' />
+                <FaQ q='What are the Benefits of Our NFTs?' a={` Revenue Sharing: Be part of the revenue sharing model in future product releases.
+      Pre-Mint Whitelist: Automatic whitelist opportunities for future collections.
+      Event Entries: Access to exclusive events.
+      Priority and various advantages in upcoming product releases.
+      VIP Membership: Become a VIP member of the Evil Magic community and an alpha tester.
+      Design Participation: Get involved in the design processes of the EMD world.
+      Exclusive Collectibles: Special physical collectibles for top buyers.`} />
+                <FaQ q='What is the Release Date and Price of the Evil Wizards NFT Collection?' a='The release date and price of the Evil Wizards NFT Collection are yet to be announced. Stay tuned for updates. (TBA - To Be Announced)' />
+                <FaQ q='How Many Pieces Will the Evil Wizards NFT Collection Include?' a='The total number of pieces in the collection has not been determined yet. Details will be announced soon. (TBA - To Be Announced)' />
               </div>
               <div className='relative flex items-center justify-center w-full mt-24'>
                 <div><Image src='/Group.png' width='1500' height='500' className='object-contain z-[0] p-4 relative opacity-[0,8] ' style={{ marginBottom: '-92px' }} /></div>
@@ -583,12 +593,16 @@ export default function Page() {
               </h1>
 
                 <div className='flex flex-col gap-4 max-w-[800px] mt-24 w-full h-full px-8'>
-                  <FaQ q='Lorem ipsum dolor sit amet?' a='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, adipisci aliquam deserunt dolorem eius est expedita fugit in, incidunt minima optio porro quaerat quas quasi rem reprehenderit sed suscipit velit.' />
-                  <FaQ q='Lorem ipsum dolor sit amet?' a='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, adipisci aliquam deserunt dolorem eius est expedita fugit in, incidunt minima optio porro quaerat quas quasi rem reprehenderit sed suscipit velit.' />
-                  <FaQ q='Lorem ipsum dolor sit amet?' a='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, adipisci aliquam deserunt dolorem eius est expedita fugit in, incidunt minima optio porro quaerat quas quasi rem reprehenderit sed suscipit velit.' />
-                  <FaQ q='Lorem ipsum dolor sit amet?' a='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, adipisci aliquam deserunt dolorem eius est expedita fugit in, incidunt minima optio porro quaerat quas quasi rem reprehenderit sed suscipit velit.' />
-                  <FaQ q='Lorem ipsum dolor sit amet?' a='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, adipisci aliquam deserunt dolorem eius est expedita fugit in, incidunt minima optio porro quaerat quas quasi rem reprehenderit sed suscipit velit.' />
-                  <FaQ q='Lorem ipsum dolor sit amet?' a='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, adipisci aliquam deserunt dolorem eius est expedita fugit in, incidunt minima optio porro quaerat quas quasi rem reprehenderit sed suscipit velit.' />
+                  <FaQ q='What is the Evil Wizards NFT Collection?' a='The Evil Wizards NFT Collection is part of a new brand called Evil Magic, which is heavily focused on creating a culture and intellectual property (IP). The NFT collection serves as a premium subscription model that connects the brands by-products, including games and other content, offering users exclusive privileges in both digital and physical realms. Additionally, it aims to create an inner circle for the brand itself.' />
+                  <FaQ q='What are the Benefits of Our NFTs?' a={` Revenue Sharing: Be part of the revenue sharing model in future product releases.
+      Pre-Mint Whitelist: Automatic whitelist opportunities for future collections.
+      Event Entries: Access to exclusive events.
+      Priority and various advantages in upcoming product releases.
+      VIP Membership: Become a VIP member of the Evil Magic community and an alpha tester.
+      Design Participation: Get involved in the design processes of the EMD world.
+      Exclusive Collectibles: Special physical collectibles for top buyers.`} />
+                  <FaQ q='What is the Release Date and Price of the Evil Wizards NFT Collection?' a='The release date and price of the Evil Wizards NFT Collection are yet to be announced. Stay tuned for updates. (TBA - To Be Announced)' />
+                  <FaQ q='How Many Pieces Will the Evil Wizards NFT Collection Include?' a='The total number of pieces in the collection has not been determined yet. Details will be announced soon. (TBA - To Be Announced)' />
                 </div>
               </div>
               <div className='relative flex items-center justify-center w-full mt-20'>
