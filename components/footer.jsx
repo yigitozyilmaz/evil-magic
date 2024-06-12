@@ -8,7 +8,7 @@ import Link from 'next/link';
 export default function Footer() {
 
   const links = {
-    'Privacy Policy': '/terms',
+    'Privacy Policy': '/privacy',
     'Terms and Conditions': '/terms'
   };
 

@@ -12,7 +12,7 @@ export default function Terms() {
     return (
         <div className='relative w-full min-h-[300dvh] flex flex-col bg-[#00001d]'>
             <Header />
-            <main className="flex text-white min-h-[600dvh] lg:min-h-[300dvh] flex-col items-center relative mb-[5rem]">
+            <main className="flex text-white min-h-[600dvh] lg:min-h-[320dvh] flex-col items-center relative mb-[5rem]">
                 <div className='relative w-full'>
                     <div className='z-[10] absolute -top-[200px] lg:-top-[100px] w-full h-max flex flex-col items-center px-4 sm:px-0'>
                         <h1 className='text-center text-5xl font-bold tracking-[5px] leading-[80px] text-[#38F7A1] green-glow mt-[350px] whitespace-nowrap'>
