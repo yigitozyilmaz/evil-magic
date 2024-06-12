@@ -406,7 +406,7 @@ export default function Page() {
       Event Entries: Access to exclusive events.
       Priority and various advantages in upcoming product releases.
       VIP Membership: Become a VIP member of the Evil Magic community and an alpha tester.
-      Design Participation: Get involved in the design processes of the EMD world.
+      Design Participation: Get involved in the design processes of the EM world.
       Exclusive Collectibles: Special physical collectibles for top buyers.`} />
                 <FaQ q='What is the Release Date and Price of the Evil Wizards NFT Collection?' a='The release date and price of the Evil Wizards NFT Collection are yet to be announced. Stay tuned for updates. (TBA - To Be Announced)' />
                 <FaQ q='How Many Pieces Will the Evil Wizards NFT Collection Include?' a='The total number of pieces in the collection has not been determined yet. Details will be announced soon. (TBA - To Be Announced)' />
@@ -599,7 +599,7 @@ export default function Page() {
       Event Entries: Access to exclusive events.
       Priority and various advantages in upcoming product releases.
       VIP Membership: Become a VIP member of the Evil Magic community and an alpha tester.
-      Design Participation: Get involved in the design processes of the EMD world.
+      Design Participation: Get involved in the design processes of the EM world.
       Exclusive Collectibles: Special physical collectibles for top buyers.`} />
                   <FaQ q='What is the Release Date and Price of the Evil Wizards NFT Collection?' a='The release date and price of the Evil Wizards NFT Collection are yet to be announced. Stay tuned for updates. (TBA - To Be Announced)' />
                   <FaQ q='How Many Pieces Will the Evil Wizards NFT Collection Include?' a='The total number of pieces in the collection has not been determined yet. Details will be announced soon. (TBA - To Be Announced)' />
