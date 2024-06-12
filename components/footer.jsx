@@ -8,8 +8,8 @@ import Link from 'next/link';
 export default function Footer() {
 
   const links = {
-    'Privacy Policy': '/legal/privacy',
-    'Terms and Conditions': '/legal/terms'
+    'Privacy Policy': '/terms',
+    'Terms and Conditions': '/terms'
   };
 
   const socials = {
