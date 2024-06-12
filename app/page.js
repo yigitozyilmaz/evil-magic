@@ -40,7 +40,7 @@ export default function Page() {
   useEffect(() => {
     const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
 
-    if (emailIsSent !== 'true') wait(500).then(() => setPopupIsOpen(true));
+    if (emailIsSent !== 'true') wait(500).then(() => setPopupIsOpen(false));
   }, []);
 
   const sendEmail = async (email) => {
