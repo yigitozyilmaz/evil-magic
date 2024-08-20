@@ -384,8 +384,8 @@ export default function Page() {
                   <div className='flex flex-wrap max-w-[1000px] items-center justify-center gap-12'>
                     <TeamMember name='Royal Dead' imagePath='/team/royal.png' q position='EXECUTER' linkedIn='https://www.linkedin.com' />
                     <TeamMember name='Wolffe' imagePath='/team/wolffe.png' q position='ART DIRECTOR' linkedIn='https://www.linkedin.com' />
-                    <TeamMember name='Lev VercettI' imagePath='/team/lev.png' q position='PARTNERSHIPS' linkedIn='https://www.linkedin.com' />
-                    <TeamMember name='OldnIcker' imagePath='/team/oldnick.png' q position='MARKETING' linkedIn='https://www.linkedin.com' />
+                    <TeamMember name='Lev VercettI' imagePath='/team/lev.png' q position='ADVISOR' linkedIn='https://www.linkedin.com' />
+                    <TeamMember name='OldnIcker' imagePath='/team/oldnick.png' q position='ADVISOR' linkedIn='https://www.linkedin.com' />
                     <TeamMember name='SACRED' imagePath='/team/Yigit.png' q position='TECHNICAL' linkedIn='https://www.linkedin.com' />
                     <TeamMember name='CORVUS' imagePath='/team/Anıl.png' q position='FINANCIAL' linkedIn='https://www.linkedin.com' />
                     <TeamMember name='SOLRIVERA' imagePath='/team/yesim.png' q position='WORLD BUILDING' linkedIn='https://www.linkedin.com' />
@@ -576,8 +576,8 @@ export default function Page() {
                   <div className='flex flex-wrap max-w-[1000px] items-center justify-center gap-12'>
                     <TeamMember name='Royal Dead' imagePath='/team/royal.png' q position='EXECUTER' linkedIn='https://www.linkedin.com' />
                     <TeamMember name='Wolffe' imagePath='/team/wolffe.png' q position='ART DIRECTOR' linkedIn='https://www.linkedin.com' />
-                    <TeamMember name='Lev VercettI' imagePath='/team/lev.png' q position='PARTNERSHIPS' linkedIn='https://www.linkedin.com' />
-                    <TeamMember name='OldnIcker' imagePath='/team/oldnick.png' q position='MARKETING' linkedIn='https://www.linkedin.com' />
+                    <TeamMember name='Lev VercettI' imagePath='/team/lev.png' q position='ADVISOR' linkedIn='https://www.linkedin.com' />
+                    <TeamMember name='OldnIcker' imagePath='/team/oldnick.png' q position='ADVISOR' linkedIn='https://www.linkedin.com' />
                     <TeamMember name='SACRED' imagePath='/team/Yigit.png' q position='TECHNICAL' linkedIn='https://www.linkedin.com' />
                     <TeamMember name='CORVUS' imagePath='/team/Anıl.png' q position='FINANCIAL' linkedIn='https://www.linkedin.com' />
                     <TeamMember name='SOLRIVERA' imagePath='/team/yesim.png' q position='WORLD BUILDING' linkedIn='https://www.linkedin.com' />
