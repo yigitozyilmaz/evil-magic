@@ -24,19 +24,13 @@ export default function Slider() {
     },
   ];
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentSlide((prevSlide) => (prevSlide + 1) % images.length);
-    }, 10000);
-    return () => clearInterval(interval);
-  }, [images.length]);
 
   const handleDotClick = (index) => {
     setCurrentSlide(index);
   };
 
   return (
-    <>                <div className='items-center justify-center flex relative'><Image className='object-contain  xl:mt-28' src='/asset 3.png' width='174' height='116' /></div>  
+    <>                <div className='items-center justify-center flex relative'><Image className='object-contain  xl:mt-28' src='/asset3.png' width='174' height='116' /></div>  
     <div className="slider-container relative w-full h-[700px] flex flex-col items-center justify-center">
 
       {/* Background */}
