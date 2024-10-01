@@ -70,6 +70,8 @@ export default function Kayma() {
           setTopValue('10%'); // Mobilde top değeri
         } 
         // Diğer tüm ekran boyutları için varsayılan değer
+        else if (width<1800 && height>800)
+        setTopValue('-6%');
         else {
           setTopValue('1%'); 
         }

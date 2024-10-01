@@ -13,7 +13,7 @@ import { MdClose } from 'react-icons/md';
 import { LuChevronRight } from 'react-icons/lu';
 import { FaDiscord } from 'react-icons/fa';
 import MyComponent from '@/components/altasker';
-import TopLightPhoto from '@/components/TopLightPhoto';
+import TopLightPhoto from '@/components/topLightPhoto';
 import Kayma from '@/components/kayma';
 import BotSideMobile from '@/components/botSideMobile';
 import BotSideDeskop from '@/components/botSideDeskop';
