@@ -1,6 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Boucherie&display=swap'); /* Boucherie Font'u */
+@import url('https://fonts.googleapis.com/css2?family=Calibri&display=swap'); /* Calibri Font'u */
+
+body {
+  font-family: 'Calibri', sans-serif; /* Paragraf fontu */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Boucherie', serif; /* Başlıklar için Boucherie fontu */
+}
 
 html, :root, body {
   width: 100%;
