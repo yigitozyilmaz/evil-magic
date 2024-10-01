@@ -86,7 +86,25 @@ export default function Kayma() {
         window.removeEventListener('resize', handleResize); // Temizleme
       };
     }, []);
-    
+    const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    // Tarayıcı genişliğine göre mobil veya masaüstü kontrolü yap
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    // İlk yüklendiğinde kontrol et
+    handleResize();
+
+    // Genişlik değiştikçe yeniden kontrol et
+    window.addEventListener('resize', handleResize);
+
+    // Temizlik işlemi (event listener'ı kaldır)
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
     
   return (<>
    
@@ -96,15 +114,16 @@ export default function Kayma() {
           <div>
           <div className='h-full w-full'>
             <div className='flex flex-row  lg:flex-row px-8 lg:px-0 gap-[60px] w-full mt- h-[100vh] lg:h-[200vh] relative'>
-              <div className='flex flex-col items-center w-full relative bg-contain'   style={{
-       height: '4000px',
-       backgroundImage: window.innerWidth <= 768 
-                        ? 'url(/bg1.png), url(/bg3.png)' 
-                        : 'url(/webUI.png)', // Masaüstünde tek arka plan resmi
-       backgroundRepeat: window.innerWidth <= 768 ? 'repeat, repeat' : 'no-repeat',
-       backgroundPosition: window.innerWidth <= 768 ? 'center top, center bottom' : 'center',
-       backgroundSize: window.innerWidth <= 768 ? '100% auto' : 'cover', // Genişliği 100% yap, yükseklik otomatik
-     }}>
+              <div className='flex flex-col items-center w-full relative bg-contain'    style={{
+        height: '4000px',
+        backgroundImage: isMobile
+          ? 'url(/bg1.png), url(/bg3.png)' // Mobil için iki arka plan
+          : 'url(/webUI.png)', // Masaüstü için tek arka plan
+        backgroundRepeat: isMobile ? 'repeat, repeat' : 'no-repeat',
+        backgroundPosition: isMobile ? 'center top, center bottom' : 'center',
+        backgroundSize: isMobile ? '100% auto' : 'cover', // Mobilde genişliği %100 yap
+      }}
+    >
           
           <div className='flex flex-col gap-y-4 w-full max-w-[650px] items-center sticky' style={{ top: `calc(10% + ${topValue})` }} ref={ref}>
 
