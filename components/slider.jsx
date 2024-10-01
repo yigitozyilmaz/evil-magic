@@ -30,7 +30,7 @@ export default function Slider() {
   };
 
   return (
-    <>                <div className='items-center justify-center flex relative'><Image className='object-contain  xl:mt-28' src='/asset3.png' width='174' height='116' /></div>  
+    <>                <div className='items-center justify-center flex relative'><Image className='object-contain  xl:mt-28' src='/Asset3.png' width='174' height='116' /></div>  
     <div className="slider-container relative w-full h-[700px] flex flex-col items-center justify-center">
 
       {/* Background */}
