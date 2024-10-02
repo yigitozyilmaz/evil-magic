@@ -13,10 +13,7 @@ export default function Minting() {
             </motion.h1>
             <motion.p className='banlancedText text-sm font-medium max-w-[600px] text-justify mt-[50px]' initial={{ opacity: 0, y: -100 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, ease: 'easeInOut' }}>
               Being wickedly brilliant is the norm here, not the exception. Join our mischievous coven of resurrected ancestors, each more delightfully narcissistic than the last. <br></br>  <br></br>It's more than just an NFT collection; it's a family reunion with a cursed twist.
-            </motion.p>
-
-          
-                        </div>
+            </motion.p></div>
     </>
   );
 }
