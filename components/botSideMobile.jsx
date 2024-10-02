@@ -138,7 +138,7 @@ export default function BotSideMobile() {
 
       <div className='absolute -top-[200px] w-full h-[1000px] bg-gradient-to-b from-transparent via-[#00001d] to-transparent z-[12]'></div>
       <div className='px-4 xl:px-0 z-[12] relative flex items-center justify-center flex-col text-center gap-y-8 -scroll-mt-[40rem] -mt-[550px]' id='team'>
-        <h1 style={{ transform: "scale(0.9, 0.9)" }} className='text-shadow font-BecauseYouWereHome font-semibold tracking-[5px] text-[4rem]'>
+        <h1 style={{ transform: "scale(0.9, 0.9)" }} className='text-shadow font-Boucherie tracking-[5px] text-[4rem]'>
           ABOUT US
         </h1>
 
@@ -161,7 +161,7 @@ export default function BotSideMobile() {
 
     </div>
 
-    <h1 className='font-BecauseYouWereHome text-5xl leading-[60px] mt-36 text-center lg:text-7xl tracking-[5px] lg:leading-[100px]' id='freq'>
+    <h1 className='font-Boucherie text-5xl leading-[60px] mt-36 text-center lg:text-7xl tracking-[5px] lg:leading-[100px]' id='freq'>
       FREQUENTLY ASKED QUESTIONS
     </h1>
     <div className='flex flex-col gap-4 max-w-[800px] mt-24 w-full h-full px-8'>

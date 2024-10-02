@@ -26,6 +26,7 @@ export default function Slider() {
 
 
   const handleDotClick = (index) => {
+    console.log(index)
     setCurrentSlide(index);
   };
 
@@ -40,10 +41,10 @@ export default function Slider() {
           initial={{ opacity: 0, scale: 1 }}
           animate={{
             opacity: 1,
-            scale: currentSlide === 1 ? 1.6 : 1.9, // Conditionally set scale to 1.7 if the slide is 1
+            scale: currentSlide === 1 ? 1.5 : 1.9, // Conditionally set scale to 1.7 if the slide is 1
           }}
           exit={{ opacity: 0 }}
-          transition={{ duration: 0.4 }}
+          transition={{ duration: 0.4,ease: "easeInOut" }}
           className="absolute inset-0 bg-no-repeat bg-cover"
           style={{
             backgroundImage: `url(${images[currentSlide].background})`,
@@ -55,11 +56,12 @@ export default function Slider() {
       </AnimatePresence>
 
       {/* Slides */}
-      <div className="slides relative w-full h-full flex items-center justify-center overflow-hidden mb-8 ">
+      <div className="slides relative w-full h-full flex items-center justify-center overflow-hidden mb-8  cursor-pointer " >
         {images.map((image, index) => (
           
           <motion.div
             key={index}
+            onClick={() => handleDotClick(index)}
             className="slide absolute w-1/2 h-full flex items-center justify-center"
             initial={{
               x: index === currentSlide ? '0%' : index === 0 ? '-100%' : '100%',
@@ -69,7 +71,7 @@ export default function Slider() {
             }}
             animate={{
               x: index === currentSlide ? '0%' : index === 0 ? '-100%' : '100%',
-              scale: index === currentSlide ? 1.2 : 0.8,
+              scale: index === currentSlide ? 1.34 : 0.8,
               zIndex: index === currentSlide ? 2 : 1,
               opacity: index === currentSlide ? 1 : 0.6,
             }}
@@ -90,19 +92,19 @@ export default function Slider() {
 
               {/* Clickable areas for green and orange sections */}
               <a
-                href={image.hrefGreen}
+               // href={image.hrefGreen}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="absolute left-[60px] bottom-[240px] w-[160px] h-[50px] bg-transparent z-20"
+                className="absolute left-[80px] bottom-[220px] w-[130px] h-[50px] bg-transparent z-99 cursor-not-allowed"
               >
                 {/* Invisible clickable area for the green section */}
               </a>
 
               <a
-                href={image.hrefOrange}
+                //href={image.hrefOrange}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="absolute left-[235px] bottom-[240px] w-[160px] h-[50px] bg-transparent z-20"
+                className="absolute left-[225px] bottom-[215px] w-[130px] h-[50px] bg-transparent z-99 cursor-not-allowed"
               >
                 {/* Invisible clickable area for the orange section */}
               </a>
@@ -123,7 +125,7 @@ export default function Slider() {
           ? currentSlide === 0
             ? 'bg-orange-500 scale-150'
             : 'bg-blue-500 scale-150'
-          : 'bg-gray-300 scale-100'
+          : 'bg-gray-300 scale-80'
       } transform rotate-45 transition-transform duration-300`}
     />
   ))}

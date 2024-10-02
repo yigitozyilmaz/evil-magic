@@ -137,7 +137,7 @@ export default function botSideDeskop() {
     }}>
       <div className='absolute -top-[500px] w-full h-[1000px] bg-gradient-to-b from-transparent via-[#00001d] to-transparent'></div>
       <div className='px-4 xl:px-0 z-[12] relative flex items-center justify-center flex-col text-center gap-y-8 -scroll-mt-[40rem]' id='team'>
-        <h1 style={{ transform: "scale(1, 1.2)" }} className='text-shadow font-BecauseYouWereHome font-semibold tracking-[5px] text-[4rem]'>
+        <h1 style={{ transform: "scale(1, 1.2)" }} className='text-shadow font-Boucherie tracking-[5px] text-[4rem] mt-4'>
           ABOUT US
         </h1>
 
@@ -159,11 +159,11 @@ export default function botSideDeskop() {
       </div>
 
     </div>
-    <div className='mt-[800px]'> <h1 className='font-BecauseYouWereHome text-5xl leading-[60px] text-center lg:text-7xl tracking-[5px] lg:leading-[100px]' id='freq'>
+    <div className='mt-[800px]'> <h1 className='font-Boucherie text-5xl leading-[60px] text-center lg:text-7xl tracking-[5px] lg:leading-[100px]' id='freq'>
       FREQUENTLY ASKED QUESTIONS
     </h1>
 
-      <div className='flex flex-col gap-4 max-w-[800px] mt-24 w-full h-full px-8'>
+      <div className='flex flex-col gap-4 max-w-[800px] mt-24 w-full h-full 'style={{marginLeft: '4.7rem'}}>
         <FaQ q='What is the Collection?' a='The Collection is part of a new brand called Evil Magic, which is heavily focused on creating a culture and intellectual property (IP). The NFT collection serves as a premium subscription model that connects the brands by-products, including games and other content, offering users exclusive privileges in both digital and physical realms. Additionally, it aims to create an inner circle for the brand itself.' />
         <FaQ q='What Benefits Do Our NFTs Offer?' a={` Revenue Sharing: Be part of the revenue sharing model in future product releases.
 Event Entries: Access to exclusive events.

@@ -1,15 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Boucherie&display=swap'); /* Boucherie Font'u */
-@import url('https://fonts.googleapis.com/css2?family=Calibri&display=swap'); /* Calibri Font'u */
+
 
 body {
   font-family: 'Calibri', sans-serif; /* Paragraf fontu */
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Boucherie', serif; /* Başlıklar için Boucherie fontu */
+  font-family: 'Boucherie Block', serif;
+  font-weight: bold;
 }
 
 html, :root, body {
@@ -22,6 +22,15 @@ html, :root, body {
   scroll-behavior: smooth;
 }
 
+.font-Boucherie {
+  font-family: 'Boucherie Block', serif;
+}
+@font-face {
+  font-family: 'Boucherie Block';
+  src: url('/font/Boucherie-Block-Bold.ttf') format('truetype');
+  font-weight: bold;
+
+}
 @font-face {
   font-family: 'Calibri';
   font-style: italic;
