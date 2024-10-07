@@ -41,7 +41,7 @@ export default function Slider() {
           initial={{ opacity: 0, scale: 1 }}
           animate={{
             opacity: 1,
-            scale: currentSlide === 1 ? 1.5 : 1.9, // Conditionally set scale to 1.7 if the slide is 1
+            scale: currentSlide === 1 ? 1.5 : 1.9, // Conditionally set scale to 1.7 if the slide is 1 bg
           }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.4,ease: "easeInOut" }}
@@ -65,13 +65,13 @@ export default function Slider() {
             className="slide absolute w-1/2 h-full flex items-center justify-center"
             initial={{
               x: index === currentSlide ? '0%' : index === 0 ? '-100%' : '100%',
-              scale: index === currentSlide ? 1.2 : 0.8,
+              scale: index === currentSlide ? 1.3 : 0.8,
               zIndex: index === currentSlide ? 2 : 1,
               opacity: index === currentSlide ? 0.6 : 1,
             }}
             animate={{
               x: index === currentSlide ? '0%' : index === 0 ? '-100%' : '100%',
-              scale: index === currentSlide ? 1.34 : 0.8,
+              scale: index === currentSlide ? 1.30 : 0.8,
               zIndex: index === currentSlide ? 2 : 1,
               opacity: index === currentSlide ? 1 : 0.6,
             }}
