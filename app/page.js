@@ -19,7 +19,7 @@ import BotSideMobile from '@/components/botSideMobile';
 import BotSideDeskop from '@/components/botSideDeskop';
 import Minting from '@/components/minting';
 import Slider from '@/components/slider';
-
+import SliderMobile from '@/components/sliderMobile';
 export default function Page() {
 
   const [activeTab, setActiveTab] = useState(null);
@@ -78,8 +78,18 @@ export default function Page() {
           <div className='z-[1] absolute -top-[100px] sm:top-[100px] w-full flex flex-col items-center  sm:px-0 2xl:pb-80' style={{ backgroundImage: `url('/16.png')`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
             <Minting />
           </div>
-          <div className='relative -top-[300px]'>
-            <Slider />
+          <div className='relative 2xl:-top-[300px] '>
+
+            {isMobile ? (
+
+              <>
+                <SliderMobile />
+              </>
+            ) : (
+              <>
+                <Slider />
+              </>
+            )}
           </div>
           <Kayma />
 

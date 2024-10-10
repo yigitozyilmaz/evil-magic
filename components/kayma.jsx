@@ -108,12 +108,13 @@ export default function Kayma() {
     
   return (<>
    
-          <div className='flex justify-center  mb-42'>
+        <div className="flex justify-center 2xl:mb-42 " style={{ marginTop: '1000px' }}>
+
           <Image className='object-contain' src='/wizard.png' width='174' height='116' />
           </div>
           <div>
           <div className='h-full w-full'>
-            <div className='flex flex-row  lg:flex-row px-8 lg:px-0 gap-[60px] w-full mt- h-[100vh] lg:h-[200vh] relative'>
+            <div className='flex flex-row  lg:flex-row px-8 lg:px-0 gap-[60px] w-full  h-[100vh] lg:h-[200vh] relative'>
               <div className='flex flex-col items-center w-full relative bg-contain'    style={{
         height: '4000px',
         backgroundImage: isMobile
