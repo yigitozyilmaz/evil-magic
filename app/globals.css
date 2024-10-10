@@ -90,7 +90,7 @@ html, :root, body {
 }
 
 .slides-to-right > img {
-  margin: 0px 40px;
+  margin: 0px 1.43rem;
 }
 
 @keyframes slides-to-right {
@@ -115,7 +115,7 @@ html, :root, body {
 }
 
 .slides-to-left > img {
-  margin: 0px 40px;
+  margin: 0px 1.43rem;
 }
 
 @keyframes slides-to-left {

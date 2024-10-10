@@ -31,7 +31,10 @@ export default function Slider() {
   };
 
   return (
-    <>                <div className='items-center justify-center flex relative'><Image className='object-contain  xl:mt-28' src='/Asset3.png' width='174' height='116' /></div>  
+    <> 
+    <h1 style={{ transform: "scale(1, 1.2)" }} className='text-shadow text-center font-Boucherie tracking-[5px] text-[4rem] mt-4'>
+          GAMES
+        </h1>              
     <div className="slider-container relative w-full h-[700px] flex flex-col items-center justify-center">
 
       {/* Background */}

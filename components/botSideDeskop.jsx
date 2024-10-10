@@ -6,10 +6,10 @@ import MyComponent from '@/components/altasker';
 
 export default function botSideDeskop() {
   return (
-    <div className='flex h-max w-full flex-col items-center justify-center mt-[310vh] xl:mt-[150vh] 2xl:mt-[40vh]'>
+    <div className='flex h-max w-full flex-col items-center justify-center mt-[310vh] xl:mt-[150vh] 2xl:mt-[40vh]'  >
     <div className='z-[10] w-full relative bg-[#00001d] flex flex-col gap-y-14 mt-[1200px] pt-[10rem] sm:pt-0 text-white'>
       <div className='absolute -top-[800px] w-full h-[950px] md:-top-[860px]  bg-gradient-to-b from-transparent z-[-10] via-[#00001d] to-[#00001d]'></div>
-      <div className='relative flex w-max h-max rotate-[-4deg] bottom-[300px]'>
+      <div className='relative flex w-max h-max rotate-[-4deg] bottom-[300px]'  >
         <div className='slides-to-right'>
           <Image src='/slide1/1.png' width={657} height={626} objectFit='cover' className='w-[260px] h-[250px]' />
           <Image src='/slide1/2.png' width={657} height={626} objectFit='cover' className='w-[260px] h-[250px]' />
@@ -44,7 +44,7 @@ export default function botSideDeskop() {
           <Image src='/slide1/9.png' width={657} height={626} objectFit='cover' className='w-[260px] h-[250px]' />
         </div>
       </div>
-      <div className='w-full -mt-[150px] h-[780px] flex gap-x-10 justify-center pr-0 xl:pr-0 2xl:pr-[150px] max-2xl:h-[920px]'>
+      <div className='w-full -mt-[150px] h-[780px] flex gap-x-10 justify-center pr-0 xl:pr-0 2xl:pr-[150px] max-2xl:h-[920px] '  style={{ backgroundImage: `url('/17.png')`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
         <Image src='/ewilhero.png' width={780} height={780} objectFit='cover' className='hidden xl:block w-[680px] h-[680px] top-[100px] xl:left-0 2xl:left-[100px] relative z-[10]' />
         <div className='flex flex-col items-center w-full gap-y-8'>
           <div className='relative '>
@@ -90,7 +90,7 @@ export default function botSideDeskop() {
           </div>
         </div>
       </div>
-      <div className='relative flex w-max h-max rotate-[3deg] top-[120px] lg:top-[180px] z-[9] '>
+      <div className='relative flex w-max h-max rotate-[3deg] top-[120px] lg:top-[180px] z-[9] ' >
         <div className='slides-to-left'>
           <Image src='/slide2/1.png' width={657} height={626} objectFit='cover' className='w-[260px] h-[250px]' />
           <Image src='/slide2/2.png' width={657} height={626} objectFit='cover' className='w-[260px] h-[250px]' />
@@ -136,7 +136,7 @@ export default function botSideDeskop() {
       backgroundRepeat: 'no-repeat'
     }}>
       <div className='absolute -top-[500px] w-full h-[1000px] bg-gradient-to-b from-transparent via-[#00001d] to-transparent'></div>
-      <div className='px-4 xl:px-0 z-[12] relative flex items-center justify-center flex-col text-center gap-y-8 -scroll-mt-[40rem]' id='team'>
+      <div className='px-4 xl:px-0 z-[12] relative flex items-center justify-center flex-col text-center gap-y-8 -scroll-mt-[40rem]' id='team' >
         <h1 style={{ transform: "scale(1, 1.2)" }} className='text-shadow font-Boucherie tracking-[5px] text-[4rem] mt-4'>
           ABOUT US
         </h1>
@@ -159,7 +159,7 @@ export default function botSideDeskop() {
       </div>
 
     </div>
-    <div className='mt-[800px]'> <h1 className='font-Boucherie text-5xl leading-[60px] text-center lg:text-7xl tracking-[5px] lg:leading-[100px]' id='freq'>
+    <div className='mt-[800px] 2xl: mt-[550px] z-[999]' > <h1 className='font-Boucherie text-5xl leading-[60px] text-center lg:text-7xl tracking-[5px] lg:leading-[100px]' id='freq'>
       FREQUENTLY ASKED QUESTIONS
     </h1>
 

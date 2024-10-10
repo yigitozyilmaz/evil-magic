@@ -7,7 +7,7 @@ export default function Minting() {
   return (
     <>
 <div className='flex flex-col items-center'>
- <motion.h1 className='text-center text-5xl font-Boucherie  tracking-[5px] leading-[60px] text-[#38F7A1] green-glow mt-[350px] whitespace-nowrap ' initial={{ opacity: 0, y: -100 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, ease: 'easeInOut' }}>
+ <motion.h1 style={{ transform: "scale(1, 1.2)" }} className='text-center font-Boucherie text-[4rem]  tracking-[5px] leading-[60px] text-[#38F7A1] green-glow mt-[350px] whitespace-nowrap ' initial={{ opacity: 0, y: -100 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, ease: 'easeInOut' }}>
              MINTING DATE<br />
               XX : XX : 2024
             </motion.h1> 
