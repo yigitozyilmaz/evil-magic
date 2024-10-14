@@ -15,6 +15,7 @@ import { FaDiscord } from 'react-icons/fa';
 import MyComponent from '@/components/altasker';
 import TopLightPhoto from '@/components/topLightPhoto';
 import Kayma from '@/components/kayma';
+import KaymaMobile from '@/components/kaymaMobile';
 import BotSideMobile from '@/components/botSideMobile';
 import BotSideDeskop from '@/components/botSideDeskop';
 import Minting from '@/components/minting';
@@ -91,7 +92,18 @@ export default function Page() {
               </>
             )}
           </div>
-          <Kayma />
+          {isMobile ? (
+
+            <>
+              <KaymaMobile />
+
+            </>
+          ) : (
+            <>
+              <Kayma />
+            </>
+          )}
+
 
         </div>
         {isMobile ? (

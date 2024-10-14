@@ -3,7 +3,7 @@ import { useEffect, useRef,useState } from 'react';
 import { AnimatePresence, motion, useScroll } from 'framer-motion';
 
 
-export default function Kayma() {
+export default function KaymaMobile() {
     const ref = useRef(null)
     const [topValue, setTopValue] = useState('8%'); // Varsayılan değer
     const { scrollYProgress } = useScroll(ref, { threshold: 0.5 });
@@ -20,6 +20,7 @@ export default function Kayma() {
   
     useEffect(() =>
     scrollYProgress.on("change", b => {
+        console.log(b)
       if (b >= 0.28 && b <= 0.31) {
         const _a = 1;
         setA(_a);
@@ -108,7 +109,7 @@ export default function Kayma() {
     
   return (<>
    
-        <div className="flex justify-center mt-28 mb-0 2xl:mb-42 sm:mt-[1000px] 2xl:mt-0 " >
+        <div className="flex justify-center mt-28 mb-10 2xl:mb-42 sm:mt-[1000px] 2xl:mt-0 " >
 
           <Image className='object-contain' src='/wizard.png' width='174' height='116' />
           </div>
@@ -126,10 +127,10 @@ export default function Kayma() {
       }}
     >
           
-          <div className='flex flex-col gap-y-4 w-full max-w-[650px] items-center sticky ' style={{ top: `calc(10% + ${topValue})` }} ref={ref}>
+          <div className='flex flex-col gap-y-4 w-full max-w-[650px] items-center sticky' style={{ top: `calc(10% + ${topValue})` }} ref={ref}>
 
-          <div className='w-[300px] h-[300px] lg:w-[600px] xl:h-[750px] 2xl:h-[700px]  relative group'>
-                    {a >= 0 && <Image src='/person/1.png' width='600' height='600' className='absolute top-0 mt-20 object-contain ' style={{ zIndex: 30 }} />}
+                  <div className='w-[300px] h-[300px] lg:w-[600px] xl:h-[750px] 2xl:h-[700px]  relative group'>
+                    {a >= 0 && <Image src='/person/1.png' width='600' height='600' className='absolute top-0  object-contain ' style={{ zIndex: 30 }} />}
 
                     <Image src='/borderson4.png' width={686} height={678} className='pointer-events-none absolute  z-[90] w-[300px] h-[300px] lg:w-[570px] lg:h-[570px] scale-[1.3] lg:ml-4 lg:mt-4 ' />
                     {a >= 1 && <Image src='/person/2.png' width='600' height='600' className='absolute top-0 object-contain ' style={{ zIndex: 41 }} />}

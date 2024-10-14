@@ -6,7 +6,7 @@ import MyComponent from '@/components/altasker';
 
 export default function BotSideMobile() {
   return (
-    <div className='flex h-max w-full flex-col items-center justify-center mt-[310vh] lg:mt-[240vh]'>
+    <div className='flex h-max w-full flex-col items-center justify-center mt-[200vh] lg:mt-[240vh]'>
     <div className='z-[10] w-full relative bg-[#00001d] flex flex-col gap-y-14 mt-[1200px] pt-[10rem] sm:pt-0 text-white'>
       <div className='absolute -top-[400px] w-full h-[800px] bg-gradient-to-b from-transparent z-[-10] via-[#00001d] to-[#00001d]'></div>
       <div className='relative flex w-max h-max rotate-[-4deg] bottom-[300px]'>
