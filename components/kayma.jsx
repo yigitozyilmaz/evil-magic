@@ -90,9 +90,6 @@ export default function Kayma() {
 
   useEffect(() => {
     // Tarayıcı genişliğine göre mobil veya masaüstü kontrolü yap
-    const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768);
-    };
 
     // İlk yüklendiğinde kontrol et
     handleResize();
