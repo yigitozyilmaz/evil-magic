@@ -90,6 +90,9 @@ export default function Kayma() {
 
   useEffect(() => {
     // Tarayıcı genişliğine göre mobil veya masaüstü kontrolü yap
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
 
     // İlk yüklendiğinde kontrol et
     handleResize();
@@ -105,7 +108,7 @@ export default function Kayma() {
     
   return (<>
    
-        <div className="flex justify-center mt-28 mb-0 2xl:mb-42 sm:mt-[1000px] 2xl:mt-0 " >
+        <div className="flex justify-center 2xl:mb-42 sm:mt-[1000px] 2xl:mt-0 " >
 
           <Image className='object-contain' src='/wizard.png' width='174' height='116' />
           </div>
@@ -123,10 +126,10 @@ export default function Kayma() {
       }}
     >
           
-          <div className='flex flex-col gap-y-4 w-full max-w-[650px] items-center sticky ' style={{ top: `calc(10% + ${topValue})` }} ref={ref}>
+          <div className='flex flex-col gap-y-4 w-full max-w-[650px] items-center sticky' style={{ top: `calc(10% + ${topValue})` }} ref={ref}>
 
-          <div className='w-[300px] h-[300px] lg:w-[600px] xl:h-[750px] 2xl:h-[700px]  relative group'>
-                    {a >= 0 && <Image src='/person/1.png' width='600' height='600' className='absolute top-0 mt-20 object-contain ' style={{ zIndex: 30 }} />}
+                  <div className='w-[300px] h-[300px] lg:w-[600px] xl:h-[750px] 2xl:h-[700px] mt-20 relative group'>
+                    {a >= 0 && <Image src='/person/1.png' width='600' height='600' className='absolute top-0 object-contain ' style={{ zIndex: 30 }} />}
 
                     <Image src='/borderson4.png' width={686} height={678} className='pointer-events-none absolute  z-[90] w-[300px] h-[300px] lg:w-[570px] lg:h-[570px] scale-[1.3] lg:ml-4 lg:mt-4 ' />
                     {a >= 1 && <Image src='/person/2.png' width='600' height='600' className='absolute top-0 object-contain ' style={{ zIndex: 41 }} />}
