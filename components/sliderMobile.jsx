@@ -39,13 +39,13 @@ export default function SliderMobile() {
     <>
       <h1
         style={{ transform: 'scale(1, 1.2)' }}
-        className="text-shadow text-center font-Boucherie tracking-[5px] 2xl:text-[4rem] sm:text-[2rem] mt-44"
+        className="text-shadow text-center font-Boucherie tracking-[5px] 2xl:text-[4rem] sm:text-[2rem] mt-64"
       >
         GAMES
       </h1>
       <div
         {...swipeHandlers}
-        className="slider-container relative w-full flex flex-col items-center justify-center"
+        className="slider-container relative w-full flex flex-col items-center justify-center mt-16"
       >
         {/* Current Image */}
         <div className="relative w-screen flex items-center justify-center overflow-hidden">

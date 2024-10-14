@@ -21,33 +21,33 @@ export default function KaymaMobile() {
     useEffect(() =>
     scrollYProgress.on("change", b => {
         console.log(b)
-      if (b >= 0.28 && b <= 0.31) {
+      if (b >= 0.23 && b <= 0.26) {
         const _a = 1;
         setA(_a);
-      } else if (b < 0.28) {
+      } else if (b < 0.23) {
         const _a = 0;
         setA(_a);
-      } else if (b >= 0.31 && b <= 0.34) {
+      } else if (b >= 0.26 && b <= 0.29) {
         const _a = 2;
         setA(_a);
       }
-      else if (b >= 0.34 && b <= 0.37) {
+      else if (b >= 0.29 && b <= 0.32) {
         const _a = 3;
         setA(_a);
       }
-      else if (b >= 0.37 && b <= 0.40) {
+      else if (b >= 0.32 && b <= 0.35) {
         const _a = 4;
         setA(_a);
       }
-      else if (b >= 0.40 && b <= 0.44) {
+      else if (b >= 0.35 && b <= 0.39) {
         const _a = 5;
         setA(_a);
       }
-      else if (b >= 0.44 && b <= 0.48) {
+      else if (b >= 0.39 && b <= 0.43) {
         const _a = 6;
         setA(_a);
       }
-      else if (b >= 0.48 && b <= 0.6) {
+      else if (b >= 0.43 && b <= 0.6) {
         const _a = 7;
         setA(_a);
       }
@@ -68,7 +68,7 @@ export default function KaymaMobile() {
         } 
         // Mobil cihazlar için (765px altı)
         else if (width < 765) {
-          setTopValue('10%'); // Mobilde top değeri
+          setTopValue('20%'); // Mobilde top değeri
         } 
         // Diğer tüm ekran boyutları için varsayılan değer
         else if (width<1800 && height>800)
@@ -109,7 +109,7 @@ export default function KaymaMobile() {
     
   return (<>
    
-        <div className="flex justify-center mt-28 mb-10 2xl:mb-42 sm:mt-[1000px] 2xl:mt-0 " >
+        <div className="flex justify-center mt-64 mb-10 2xl:mb-42 sm:mt-[1000px] 2xl:mt-0 " >
 
           <Image className='object-contain' src='/wizard.png' width='174' height='116' />
           </div>
@@ -117,7 +117,7 @@ export default function KaymaMobile() {
           <div className='h-full w-full'>
             <div className='flex flex-row  lg:flex-row px-8 lg:px-0 gap-[60px] w-full  h-[100vh] lg:h-[200vh] relative'>
               <div className='flex flex-col items-center w-full relative bg-contain'    style={{
-        height: '4000px',
+        height: '4200px',
         backgroundImage: isMobile
           ? 'url(/bg1.png), url(/bg3.png)' // Mobil için iki arka plan
           : 'url(/webUI.png)', // Masaüstü için tek arka plan

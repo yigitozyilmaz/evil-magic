@@ -142,7 +142,7 @@ export default function BotSideMobile() {
           ABOUT US
         </h1>
 
-        <p className='banlancedText max-w-[700px] font-medium text-sm lg:text-lg text-justify'>
+        <p className='banlancedText max-w-[700px] font-medium text-sm lg:text-lg text-justify ml-2 mr-2'>
           At Fusion Up, we're driven by a philosophy that mirrors the principles of alchemy, believing in the transformative power of fusion. Our team, deeply entrenched in the art world, brings a unique blend of creative artistry and scientific precision to every project. We approach game development as an art form, where imaginative design and data-driven strategies fuse to create immersive experiences. By mixing these elements, we craft games that are not just played, but felt and remembered.<br /><br />
         </p>
 
