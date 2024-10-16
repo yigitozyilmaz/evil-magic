@@ -76,7 +76,7 @@ export default function Page() {
 
         <div className='relative w-full'>
           <Image className='w-full h-full relative top-[-60px] lg:top-[-150px] xl:top-[-260px] z-[9] object-contain' src='/leaves.png' width='1920' height='1080' />
-          <div className='z-[1] absolute top-[0px] 2xl:-top-[100px] sm:top-[100px] w-full flex flex-col items-center  sm:px-0 2xl:pb-80' style={{ backgroundImage: `url('/16.png')`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+          <div className='z-[1] absolute xs:top-[0px] 2xl:top-[100px] xs:top-[100px] w-full flex flex-col items-center  sm:px-0 2xl:pb-80' style={{ backgroundImage: `url('/16.png')`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
             <Minting />
           </div>
           <div className='relative 2xl:-top-[300px] '>
