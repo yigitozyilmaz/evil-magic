@@ -116,16 +116,22 @@ export default function KaymaMobile() {
           <div>
           <div className='h-full w-full'>
             <div className='flex flex-row  lg:flex-row px-8 lg:px-0 gap-[60px] w-full  h-[100vh] lg:h-[200vh] relative'>
-              <div className='flex flex-col items-center w-full relative bg-contain'    style={{
-        height: '4200px',
-        backgroundImage: isMobile
-          ? 'url(/bg1.png), url(/bg3.png)' // Mobil için iki arka plan
-          : 'url(/webUI.png)', // Masaüstü için tek arka plan
-        backgroundRepeat: isMobile ? 'repeat, repeat' : 'no-repeat',
-        backgroundPosition: isMobile ? 'center top, center bottom' : 'center',
-        backgroundSize: isMobile ? '100% auto' : 'cover', // Mobilde genişliği %100 yap
-      }}
-    >
+            <div
+  className="flex flex-col items-center w-full relative bg-contain"
+  style={{
+    height: '4200px',
+    backgroundImage: `
+      url(/bg1.png),
+      url(/bg3.png)
+    `,
+    backgroundRepeat: 'repeat-y, repeat-y',
+    backgroundPosition: 'center top, center bottom',
+    backgroundSize: '100% 200px', // Arka planı her iki görsel için 200px olarak ayarla
+    backgroundAttachment: 'scroll, scroll'
+  }}
+>
+
+
           
           <div className='flex flex-col gap-y-4 w-full max-w-[650px] items-center sticky' style={{ top: `calc(10% + ${topValue})` }} ref={ref}>
 
