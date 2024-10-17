@@ -122,7 +122,7 @@ export default function KaymaMobile() {
     height: '4200px',
     backgroundImage: `
       url(/bg1.png),
-      url(/bg3.png)
+
     `,
     backgroundRepeat: 'repeat-y, repeat-y',
     backgroundPosition: 'center top, center bottom',

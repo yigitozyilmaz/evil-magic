@@ -32,9 +32,12 @@ export default function Slider() {
 
   return (
     <> 
-    <h1 style={{ transform: "scale(1, 1.2)" }} className='text-shadow text-[#38F7A1] green-glow text-center font-Boucherie tracking-[5px] text-[4rem] mt-4'>
-          GAMES
-        </h1>              
+  {/* 
+<h1 style={{ transform: "scale(1, 1.2)" }} className='text-shadow text-[#38F7A1] green-glow text-center font-Boucherie tracking-[5px] text-[4rem] mt-4'>
+  GAMES
+</h1>  
+*/}
+             
     <div className="slider-container relative w-full h-[700px] flex flex-col items-center justify-center">
 
       {/* Background */}
