@@ -37,12 +37,12 @@ export default function SliderMobile() {
 
   return (
     <>
-    {/*   <h1
+    {   <h1
         style={{ transform: 'scale(1, 1.2)' }}
         className="text-shadow text-center font-Boucherie text-[#38F7A1] green-glow tracking-[5px] 2xl:text-[4rem] sm:text-[2rem] mt-64"
       >
-        GAMES
-      </h1>*/}
+        
+      </h1>}
       <div
         {...swipeHandlers}
         className="slider-container relative w-full flex flex-col items-center justify-center mt-16"
