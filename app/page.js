@@ -37,7 +37,7 @@ export default function Page() {
   useEffect(() => {
     const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
 
-    if (emailIsSent !== 'false') wait(500).then(() => setPopupIsOpen(true));
+    if (emailIsSent !== 'false') wait(2000).then(() => setPopupIsOpen(true));
   }, []);
 
   const sendEmail = async (email) => {
@@ -104,7 +104,7 @@ export default function Page() {
           <div className='z-[1] absolute xs:top-[0px] 2xl:top-[100px] xs:top-[100px] w-full flex flex-col items-center  sm:px-0 2xl:pb-80' style={{ backgroundImage: `url('/16.png')`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
             <Minting />
           </div>
-          <div className='relative 2xl:-top-[300px] '>
+          <div className='relative 2xl:-top-[300px] lg:top-[-300px] '>
 
             {isMobile ? (
 

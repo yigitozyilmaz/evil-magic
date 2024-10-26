@@ -177,7 +177,7 @@ Exclusive Collectibles: Special physical collectibles for community members.`} /
     </div>
     <div className='relative flex items-center justify-center w-full mt-20'>
       <div><Image src='/Group.png' width='1500' height='500' className='object-contain z-[0] p-4  relative opacity-[0,8] 2xl:mb-[-275px] md:mb-[-175px]' /></div>
-      <div className='absolute top-[250px] 2xl:top-[420px] flex [&>h2]:z-[9] left-0 opacity-50 '>
+      <div className='absolute lg:top-[430px] 2xl:top-[420px] flex [&>h2]:z-[9] left-0 opacity-50 '>
         <h2 className='slides-to-left slides-to-left-35s text-9xl font-BecauseYouWereHome tracking-[5px] bottom-[50px] w-max [&>*]:mx-[20px]'>
           <span className='flex'>JoIn DIscord <FaDiscord className='hover:text-[#5865F2] transition-colors cursor-pointer ml-8 mt-2' /></span>
           <span className='flex'> JoIn DIscord <FaDiscord className='hover:text-[#5865F2] transition-colors cursor-pointer ml-8 mt-2' /></span>

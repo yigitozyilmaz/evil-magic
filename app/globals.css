@@ -604,3 +604,9 @@ svg#gooeysvg {
 p {
   opacity: .75;
 }
+@media (max-width: 640px) {
+  h1, h2, p, label {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
