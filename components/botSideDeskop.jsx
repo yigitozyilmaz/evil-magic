@@ -6,7 +6,7 @@ import MyComponent from '@/components/altasker';
 
 export default function botSideDeskop() {
   return (
-    <div className='flex h-max w-full flex-col items-center justify-center mt-[10vh] xl:mt-[150vh] 2xl:mt-[40vh]'  >
+    <div className='flex h-max w-full flex-col items-center justify-center  mt-[10vh] xl:mt-[50vh] 2xl:mt-[40vh]'  >
     <div className='z-[10] w-full relative bg-[#00001d] flex flex-col gap-y-14 mt-[1200px] pt-[10rem] sm:pt-0 text-white'>
       <div className='absolute -top-[800px] w-full h-[950px] md:-top-[860px]  bg-gradient-to-b from-transparent z-[-10] via-[#00001d] to-[#00001d]'></div>
       <div className='relative flex w-max h-max rotate-[-4deg] bottom-[300px]'  >
@@ -176,7 +176,7 @@ Exclusive Collectibles: Special physical collectibles for community members.`} /
       </div>
     </div>
     <div className='relative flex items-center justify-center w-full mt-20'>
-      <div><Image src='/Group.png' width='1500' height='500' className='object-contain z-[0] p-4  relative opacity-[0,8] 2xl:mb-[-275px] sm:mb-[-275px]' /></div>
+      <div><Image src='/Group.png' width='1500' height='500' className='object-contain z-[0] p-4  relative opacity-[0,8] 2xl:mb-[-275px] md:mb-[-175px]' /></div>
       <div className='absolute top-[250px] 2xl:top-[420px] flex [&>h2]:z-[9] left-0 opacity-50 '>
         <h2 className='slides-to-left slides-to-left-35s text-9xl font-BecauseYouWereHome tracking-[5px] bottom-[50px] w-max [&>*]:mx-[20px]'>
           <span className='flex'>JoIn DIscord <FaDiscord className='hover:text-[#5865F2] transition-colors cursor-pointer ml-8 mt-2' /></span>
