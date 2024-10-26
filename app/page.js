@@ -37,7 +37,7 @@ export default function Page() {
   useEffect(() => {
     const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
 
-    if (emailIsSent !== 'true') wait(500).then(() => setPopupIsOpen(false));
+    if (emailIsSent !== 'false') wait(500).then(() => setPopupIsOpen(true));
   }, []);
 
   const sendEmail = async (email) => {
@@ -71,6 +71,31 @@ export default function Page() {
   return (
     <div className=' w-full min-h-[100dvh] flex flex-col bg-[#00001d]'>
       <Header />
+      <div> {popupIsOpen && (
+        <div className={twMerge(
+          'fixed text-white top-0 left-0 w-full h-full overflow-hidden bg-black/80 z-[100000] flex items-center justify-center'
+        )}>
+          <div className='relative'>
+            <div className='absolute right-[24px] top-2 md:right-[50px] md:top-5 xl:right-[60px]'>
+              <MdClose className='pointer-events-auto cursor-pointer size-5 md:size-7' onClick={() => setPopupIsOpen(false)} />
+            </div>
+            <div className='absolute bottom-[20px] flex items-start left-5 right-0 md:left-[100px] md:bottom-[30px] lg:left-[120px] lg:bottom-10'>
+              <div className='flex gap-x-1 rounded-xl p-1 bg-[#a9615c]'>
+                <input type='text' className='bg-neutral-900 md:w-[190px] lg:w-[260px] rounded-l-lg text-white text-center text-sm sm:text-sm md:text-lg lg:text-lg font-semibold outline-none' placeholder='Enter your email' value={email} onChange={e => setEmail(e.target.value)} onKeyUp={e => {
+                  if (e.key === 'Enter') {
+                    e.preventDefault();
+                    sendEmail();
+                  }
+                }} />
+                <button className='p-1 rounded text-black text-center text-lg font-semibold outline-none' onClick={sendEmail}>
+                  <LuChevronRight className='size-5 sm:size-5 md:size-10 text-white' />
+                </button>
+              </div>
+            </div>
+            <img src='/popupbg2.png' width={1809} height={915} className='w-[1400px] sm:w-[500px] xs:w-[400px] md:w-[800px] lg:w-[1000px] h-auto pointer-events-none' />
+          </div>
+        </div>
+      )}</div>
       <main className="flex text-white  flex-col items-center relative mb-[5rem]">
         <TopLightPhoto />
 
