@@ -22,8 +22,8 @@ const MyComponent = () => {
               alt="CTU Logo" 
               width="700" 
               height="500" 
-              className="object-contain z-[12] relative opacity-[1] mr-10"
-              style={{ top: '-420px', marginBottom: '-500px' }}
+              className="object-contain z-[12] relative opacity-[1] mr-10 sm:w-[500px] mb-[-500px] sm:top-[-410px] top-[-420px]"
+
             />
           </a>
 
