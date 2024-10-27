@@ -119,7 +119,7 @@ export default function Kayma() {
         height: '4000px',
         backgroundImage: isMobile
           ? 'url(/bg1.png), url(/bg3.png)' // Mobil için iki arka plan
-          : 'url(/webUI.png)', // Masaüstü için tek arka plan
+          : 'url(/bgD.png)', // Masaüstü için tek arka plan
         backgroundRepeat: isMobile ? 'repeat, repeat' : 'no-repeat',
         backgroundPosition: isMobile ? 'center top, center bottom' : 'center',
         backgroundSize: isMobile ? '100% auto' : 'cover', // Mobilde genişliği %100 yap
