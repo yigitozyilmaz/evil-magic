@@ -3,12 +3,12 @@ import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyD7WGfUn1rpZQqhKvAO39biLQhze1rpAHo",
-    authDomain: "evilwizardd-efbda.firebaseapp.com",
-    projectId: "evilwizardd-efbda",
-    storageBucket: "evilwizardd-efbda.appspot.com",
-    messagingSenderId: "477795449052",
-    appId: "1:477795449052:web:f02e9ecb73f9e7ade61c19"
+    apiKey: "AIzaSyAeoPEjVtXiE7Sj-pxddi0UtENvlHjTSiA",
+    authDomain: "evil-wizards-beta-emails.firebaseapp.com",
+    projectId: "evil-wizards-beta-emails",
+    storageBucket: "evil-wizards-beta-emails.appspot.com",
+    messagingSenderId: "403782143506",
+    appId: "1:403782143506:web:9452336b252e31f1a612cb"
 };
 
 // Initialize Firebase
