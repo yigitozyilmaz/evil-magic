@@ -38,7 +38,7 @@ export default function Slider() {
 </h1>  
 */}
              
-    <div className="slider-container relative w-full h-[700px] flex flex-col items-center justify-center">
+    <div className="slider-container relative w-full h-[750px] flex flex-col items-center justify-center mt-2">
 
       {/* Background */}
       <AnimatePresence mode="wait">
