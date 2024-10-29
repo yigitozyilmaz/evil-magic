@@ -34,6 +34,7 @@ export default function Page() {
 
   const prevTab = usePrevious(activeTab);
   const [emailIsSent, setEmailIsSent] = useCookie('emailIsSent');
+  const [isValidEmail, setIsValidEmail] = useState(true);
 
 
 
@@ -59,13 +60,29 @@ export default function Page() {
   };
 
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    console.log("Email gönderiliyor:", email); // Email'in güncel değeri burada görünecek
-    sendEmail(email); // email durumunu buraya geçiyoruz
+  const handleKeyUp = (e) => {
+    if (e.key === 'Enter') {
+      if (email.includes('@')) {
+        setIsValidEmail(true); // Email geçerli ise, arka plan rengi normal
+        sendEmail(email);
+      } else {
+        setIsValidEmail(false); // Email geçersizse, arka plan rengi kırmızı
+      }
+      e.preventDefault();
+    }
   };
 
-
+  const button = (e) => {
+    {
+      if (email.includes('@')) {
+        setIsValidEmail(true); // Email geçerli ise, arka plan rengi normal
+        sendEmail(email);
+      } else {
+        setIsValidEmail(false); // Email geçersizse, arka plan rengi kırmızı
+      }
+      e.preventDefault();
+    }
+  };
 
   return (
     <div className=' w-full min-h-[100dvh] flex flex-col bg-[#00001d]'>
@@ -80,14 +97,15 @@ export default function Page() {
             </div>
             <div className='absolute bottom-[20px] flex items-start left-5 right-0 md:left-[100px] md:bottom-[30px] lg:left-[120px] lg:bottom-10'>
               <div className='flex gap-x-1 rounded-xl p-1 bg-[#a9615c]'>
-                <input type='text' className='bg-neutral-900 md:w-[190px] lg:w-[260px] rounded-l-lg text-white text-center text-sm sm:text-sm md:text-lg lg:text-lg font-semibold outline-none' placeholder='Enter your email' value={email} onChange={e => setEmail(e.target.value)} onKeyUp={e => {
-                  if (e.key === 'Enter') {
-                    console.log("Enter'a basıldı, email gönderiliyor:", email);
-                    e.preventDefault();
-                    sendEmail(email);
-                  }
-                }} />
-                <button className='p-1 rounded text-black text-center text-lg font-semibold outline-none' onClick={() => sendEmail(email)}>
+                <input type='text' className={`bg-neutral-900 md:w-[190px] lg:w-[260px] rounded-l-lg  text-center text-sm sm:text-sm md:text-lg lg:text-lg outline-none ${!isValidEmail ? 'text-red-500' : 'text-white'
+                  }`} placeholder='Enter your email' value={email}
+                  onChange={(e) => {
+                    setEmail(e.target.value);
+                    setIsValidEmail(true); // Yazma sırasında rengi normalleştir
+                  }}
+                  onKeyUp={handleKeyUp}
+                />
+                <button className='p-1 rounded text-black text-center text-lg font-semibold outline-none' onClick={button}>
                   <LuChevronRight className='size-5 sm:size-5 md:size-10 text-white' />
                 </button>
               </div>

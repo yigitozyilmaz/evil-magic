@@ -600,7 +600,9 @@ svg#gooeysvg {
 ::-webkit-scrollbar-thumb:hover {
   background: #38F7A1; 
 }
-
+input::placeholder {
+  opacity: 0.4;
+}
 p {
   opacity: .75;
 }
