@@ -21,6 +21,9 @@ import BotSideDeskop from '@/components/botSideDeskop';
 import Minting from '@/components/minting';
 import Slider from '@/components/slider';
 import SliderMobile from '@/components/sliderMobile';
+import { db } from '@/app/firebase/firebaseConfig';
+import { collection, addDoc } from "firebase/firestore";
+
 export default function Page() {
 
   const [activeTab, setActiveTab] = useState(null);
@@ -42,29 +45,25 @@ export default function Page() {
 
   const sendEmail = async (email) => {
     try {
-      const response = await fetch(`/api/email/${encodeURIComponent(email)}/route`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-      });
-      const data = await response.json();
-      if (response.ok) {
-        setEmail('');
-        setPopupIsOpen(false);
-        setEmailIsSent('true');
-      } else {
-        console.error('Error:', data);
-      }
+      // Firestore'da 'e-mail' koleksiyonuna yeni bir belge ekle
+      await addDoc(collection(db, 'e-mail'), { mail: email });
+
+      setEmail(''); // Email alanını temizle
+      setPopupIsOpen(false);
+      setEmailIsSent(true); // Email gönderildi olarak işaretle
+
+      console.log("Email Firebase'e başarıyla kaydedildi:", email);
     } catch (error) {
-      console.error('Error:', error);
+      console.error('Firebase\'e email kaydedilirken hata oluştu:', error);
     }
   };
+
+
   const handleSubmit = async (e) => {
     e.preventDefault();
-    sendEmail();
+    console.log("Email gönderiliyor:", email); // Email'in güncel değeri burada görünecek
+    sendEmail(email); // email durumunu buraya geçiyoruz
   };
-
 
 
 
@@ -83,11 +82,12 @@ export default function Page() {
               <div className='flex gap-x-1 rounded-xl p-1 bg-[#a9615c]'>
                 <input type='text' className='bg-neutral-900 md:w-[190px] lg:w-[260px] rounded-l-lg text-white text-center text-sm sm:text-sm md:text-lg lg:text-lg font-semibold outline-none' placeholder='Enter your email' value={email} onChange={e => setEmail(e.target.value)} onKeyUp={e => {
                   if (e.key === 'Enter') {
+                    console.log("Enter'a basıldı, email gönderiliyor:", email);
                     e.preventDefault();
-                    sendEmail();
+                    sendEmail(email);
                   }
                 }} />
-                <button className='p-1 rounded text-black text-center text-lg font-semibold outline-none' onClick={sendEmail}>
+                <button className='p-1 rounded text-black text-center text-lg font-semibold outline-none' onClick={() => sendEmail(email)}>
                   <LuChevronRight className='size-5 sm:size-5 md:size-10 text-white' />
                 </button>
               </div>
