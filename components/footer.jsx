@@ -35,21 +35,12 @@ export default function Footer() {
       </div>
 
       <div className='flex flex-col items-center gap-2  justify-end pb-4'>
-        <div className='flex items-center justify-center gap-6 mb-[44px]'>
-          {Object.keys(socials).map(social => (
-            <SocialIcon href={social} Icon={socials[social]} key={social} />
-          ))}
-        </div>
-        <div className='flex flex-row gap-2'>
-          {Object.keys(links).map(link => (
-            <a className='hover:text-[#00ff80] transition-all opacity-50 hover:opacity-100' href={links[link]} key={link}>
-              {link}
-            </a>
-          ))}
+        <div className='flex items-center justify-center gap-6 mb-[44px] px-[60px]'>
+            <SocialIcon href={"https://x.com/evilwizardsNFT"} Icon={FaXTwitter} key={"https://x.com/evilwizardsNFT"}  />
         </div>
       </div>
 
-      <Image src='/iskelet.png' width={1035} height={529} className='w-[835px] h-[427px] relative bottom-[65px] left-[120px] hidden xl:block' />
+      <Image src='/iskelet.png' width={1035} height={529} className='w-[835px] h-[427px] relative bottom-[65px]  hidden xl:block' />
     </div>
   );
 }
