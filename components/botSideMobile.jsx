@@ -144,8 +144,8 @@ export default function BotSideMobile() {
     }}>
 
       <div className='absolute -top-[200px] w-full h-[1000px] bg-gradient-to-b from-transparent via-[#00001d] to-transparent z-[12]'></div>
-      <div className='px-4 xl:px-0 z-[12] relative flex items-center justify-center flex-col text-center gap-y-8 -scroll-mt-[40rem] -mt-[550px]' id='team'>
-        <h1 style={{ transform: "scale(0.9, 0.9)" }} className='text-shadow font-Boucherie tracking-[5px] text-[4rem]'>
+      <div className='px-4 xl:px-0 z-[12] relative flex items-center justify-center flex-col text-center gap-y-8 -scroll-mt-[40rem] -mt-[550px]' >
+        <h1 id='team' style={{ transform: "scale(0.9, 0.9)" }} className='text-shadow font-Boucherie tracking-[5px] text-[4rem]'>
           WHO WE ARE
         </h1>
 
@@ -174,7 +174,7 @@ export default function BotSideMobile() {
     <div className='relative flex items-center justify-center w-full mt-24'>
       <div><Image src='/Group.png' width='1500' height='500' className='object-contain z-[0] p-4 relative opacity-[0,8] ' style={{ marginBottom: '-92px' }} /></div>
     </div>
-    <a href="discordlink" target="_blank" rel="noopener noreferrer"><Image src='/ctu.png' width='190' height='500' className='object-contain z-[50] relative opacity-[1] mr-10' style={{ top: '-105px', marginBottom: '-400px' }} /></a>
+    <span><Image src='/ctu.png' width='190' height='500' className='object-contain z-[50] relative opacity-[1] mr-10' style={{ top: '-105px', marginBottom: '-400px' }} /></span>
   </div>
   );
 }

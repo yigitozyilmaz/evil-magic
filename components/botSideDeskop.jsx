@@ -143,8 +143,8 @@ export default function botSideDeskop() {
       backgroundRepeat: 'no-repeat'
     }}>
       <div className='absolute -top-[500px] w-full h-[1000px] bg-gradient-to-b from-transparent via-[#00001d] to-transparent'></div>
-      <div className='px-4 xl:px-0 z-[12] relative flex items-center justify-center flex-col text-center gap-y-8 -scroll-mt-[40rem]' id='team' >
-        <h1 style={{ transform: "scale(1, 1.2)" }} className='text-shadow font-Boucherie tracking-[5px] text-[4rem] mt-4'>
+      <div className='px-4 xl:px-0 z-[12] relative flex items-center justify-center flex-col text-center gap-y-8 -scroll-mt-[40rem]' >
+        <h1 id='team' style={{ transform: "scale(1, 1.2)" }} className='text-shadow font-Boucherie tracking-[5px] text-[4rem] mt-4'>
         WHO WE ARE
         </h1>
 
@@ -157,7 +157,7 @@ export default function botSideDeskop() {
         The journey begins now. Will you be part of it?
         </p>
 
-        <div className='flex flex-wrap max-w-[1000px] items-center justify-center gap-12'>
+        <div  className='flex flex-wrap max-w-[1000px] items-center justify-center gap-12'>
           <TeamMember name='Royal Dead' imagePath='/team/royal.png' q position='EXECUTER'  />
           <TeamMember name='Wolffe' imagePath='/team/wolffe.png' q position='ART DIRECTOR'  />
           <TeamMember name='MACHEWIZlI' imagePath='/team/mache.png' q position='TECH'  />

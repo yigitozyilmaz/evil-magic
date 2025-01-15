@@ -14,7 +14,7 @@ const MyComponent = () => {
 
 
 
-          <a href="discordlink" target="_blank" rel="noopener noreferrer"          onMouseEnter={handleHover} 
+          <span  target="_blank" rel="noopener noreferrer"          onMouseEnter={handleHover} 
         onMouseLeave={handleHover} 
 >
             <img 
@@ -24,7 +24,7 @@ const MyComponent = () => {
               height="500" 
               className="relative opacity-[1] mr-10 md:w-[600px] 2xl:w-[700px] mb-[-500px] md:top-[-420px] 2xl:top-[-420px] z-50"
             />
-          </a>
+          </span>
 
 
   );
