@@ -111,7 +111,7 @@ export default function KaymaMobile() {
    
         <div className="flex justify-center mt-64 mb-10 2xl:mb-42 sm:mt-[1000px] 2xl:mt-0 " >
 
-          <Image className='object-contain' src='/wizard.png' width='174' height='116' />
+ 
           </div>
           <div>
           <div className='h-full w-full'>

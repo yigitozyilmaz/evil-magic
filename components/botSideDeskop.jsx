@@ -53,8 +53,15 @@ export default function botSideDeskop() {
             <Image src='/skull.png' width={1000} height={1000} className='absolute -right-[600px] top-[160px] scale-x-[-1] 2xl:flex hidden' />
           </div>
 
-          <p className='banlancedText max-w-[540px] font-medium text-sm lg:text-lg -mt-[40px] text-justify px-4 2xl:px-0 '>
-            Immerse yourself in the legacy of the 'Evil Wizards,' where every NFT is a gateway to a long line of powerful ancestors. Each wizard in this exclusive collection represents a piece of a centuries-old family saga, rich with evil magic and curses. By owning a piece of this collection, you don't just acquire a digital collectible; you become part of a lineage of an untold prophecy. Join now and be part of the master plan!
+          <p className='banlancedText max-w-[540px] font-medium text-sm lg:text-lg -mt-[40px]  px-4 2xl:px-0 text-center'>
+          The curse lives on. And so do they.
+          <br />
+          <br />
+          Each Evil Wizard holds a piece of forbidden magic and a story untold. Each NFT is a key to their story.
+          <br />
+          <br />
+
+          Unlock their secrets. Shape the prophecy.
           </p>
 
           <svg xmlns="http://www.w3.org/2000/svg" version="1.1" id='gooeysvg'>
@@ -138,62 +145,32 @@ export default function botSideDeskop() {
       <div className='absolute -top-[500px] w-full h-[1000px] bg-gradient-to-b from-transparent via-[#00001d] to-transparent'></div>
       <div className='px-4 xl:px-0 z-[12] relative flex items-center justify-center flex-col text-center gap-y-8 -scroll-mt-[40rem]' id='team' >
         <h1 style={{ transform: "scale(1, 1.2)" }} className='text-shadow font-Boucherie tracking-[5px] text-[4rem] mt-4'>
-          ABOUT US
+        WHO WE ARE
         </h1>
 
-        <p className='banlancedText max-w-[800px] font-medium text-sm lg:text-lg text-justify'>
-          At Fusion Up, we're driven by a philosophy that mirrors the principles of alchemy, believing in the transformative power of fusion. Our team, deeply entrenched in the art world, brings a unique blend of creative artistry and scientific precision to every project. We approach game development as an art form, where imaginative design and data-driven strategies fuse to create immersive experiences. By mixing these elements, we craft games that are not just played, but felt and remembered.<br /><br />
+        <p className='banlancedText max-w-[800px] font-medium text-sm lg:text-lg text-center'>
+        We are the storytellers, creators, and visionaries bound by a shared love for dark fantasy and interactive worlds. Our core team combines expertise in game development, digital art, and world-building, backed by years of hands-on industry experience.<br /><br />
+
+        We don’t just tell tales — we bring them to life.
+        A living world of mystery, magic, and sagas awaits those bold enough to step in.
+        <br /><br />
+        The journey begins now. Will you be part of it?
         </p>
 
         <div className='flex flex-wrap max-w-[1000px] items-center justify-center gap-12'>
-          <TeamMember name='Royal Dead' imagePath='/team/royal.png' q position='EXECUTER' linkedIn='https://www.linkedin.com' />
-          <TeamMember name='Wolffe' imagePath='/team/wolffe.png' q position='ART DIRECTOR' linkedIn='https://www.linkedin.com' />
-          <TeamMember name='Lev VercettI' imagePath='/team/lev.png' q position='ADVISOR' linkedIn='https://www.linkedin.com' />
-          <TeamMember name='OldnIcker' imagePath='/team/oldnick.png' q position='ADVISOR' linkedIn='https://www.linkedin.com' />
-          <TeamMember name='SACRED' imagePath='/team/Yigit.png' q position='TECHNICAL' linkedIn='https://www.linkedin.com' />
-          <TeamMember name='CORVUS' imagePath='/team/Anıl.png' q position='FINANCIAL' linkedIn='https://www.linkedin.com' />
-          <TeamMember name='SOLRIVERA' imagePath='/team/yesim.png' q position='WORLD BUILDING' linkedIn='https://www.linkedin.com' />
-          <TeamMember name='HELLO MOON' imagePath='/team/hellomoon.png' q position='INFRASTRUCTURE' linkedIn='https://www.linkedin.com' />
+          <TeamMember name='Royal Dead' imagePath='/team/royal.png' q position='EXECUTER'  />
+          <TeamMember name='Wolffe' imagePath='/team/wolffe.png' q position='ART DIRECTOR'  />
+          <TeamMember name='MACHEWIZlI' imagePath='/team/mache.png' q position='TECH'  />
+          <TeamMember name='RIVERA' imagePath='/team/rivera.png' q position='WORLD BUILDING'  />
+          <TeamMember name='SACRED' imagePath='/team/sacred.png' q position='PRODUCT'  />
         </div>
-        <div className='absolute mt-[1200px] w-full h-[1150px] bg-gradient-to-b from-transparent z-[-10] via-[#00001d] to-[#00001d]'></div>
+        <div  className='absolute mt-[1600px] w-full h-[1650px] bg-gradient-to-b from-transparent z-[-10] via-[#00001d] to-[#00001d]'></div>
       </div>
 
     </div>
-    <div className='mt-[800px] 2xl: mt-[550px] z-[999]' > <h1 className='font-Boucherie text-5xl leading-[60px] text-center lg:text-7xl tracking-[5px] lg:leading-[100px]' id='freq'>
-      FREQUENTLY ASKED QUESTIONS
-    </h1>
-
-      <div className='flex flex-col gap-4 max-w-[800px] mt-24 w-full h-full 'style={{marginLeft: '4.7rem'}}>
-        <FaQ q='What is the Collection?' a='The Collection is part of a new brand called Evil Magic, which is heavily focused on creating a culture and intellectual property (IP). The NFT collection serves as a premium subscription model that connects the brands by-products, including games and other content, offering users exclusive privileges in both digital and physical realms. Additionally, it aims to create an inner circle for the brand itself.' />
-        <FaQ q='What Benefits Do Our NFTs Offer?' a={` Revenue Sharing: Be part of the revenue sharing model in future product releases.
-Event Entries: Access to exclusive events.
-Priority and various advantages in upcoming product releases.
-VIP Membership: Become a VIP member of the Evil Magic community and an alpha tester.
-Design Participation: Get involved in the design processes of the EM world.
-Exclusive Collectibles: Special physical collectibles for community members.`} />
-        <FaQ q='What is the Release Date and Price of the Collection?' a='The release date and price of the Collection are yet to be announced. Stay tuned for updates. (TBA - To Be Announced)' />
-        <FaQ q='How Many Pieces Will the Collection Include?' a=' Details will be announced soon. (TBA - To Be Announced)' />
-      </div>
-    </div>
-    <div className='relative flex items-center justify-center w-full mt-20'>
+    
+    <div className='relative z-50 flex items-center justify-center w-full mt-20'>
       <div><Image src='/Group.png' width='1500' height='500' className='object-contain z-[0] p-4  relative opacity-[0,8] 2xl:mb-[-275px] md:mb-[-175px]' /></div>
-      <div className='absolute lg:top-[430px] 2xl:top-[420px] flex [&>h2]:z-[9] left-0 opacity-50 '>
-        <h2 className='slides-to-left slides-to-left-35s text-9xl font-BecauseYouWereHome tracking-[5px] bottom-[50px] w-max [&>*]:mx-[20px]'>
-          <span className='flex'>JoIn DIscord <FaDiscord className='hover:text-[#5865F2] transition-colors cursor-pointer ml-8 mt-2' /></span>
-          <span className='flex'> JoIn DIscord <FaDiscord className='hover:text-[#5865F2] transition-colors cursor-pointer ml-8 mt-2' /></span>
-          <span className='flex'>JoIn DIscord <FaDiscord className='hover:text-[#5865F2] transition-colors cursor-pointer ml-8 mt-2' /></span>
-        </h2>
-        <h2 className='slides-to-left slides-to-left-35s z-[9] text-9xl font-BecauseYouWereHome tracking-[5px] bottom-[50px] w-max [&>*]:mx-[20px]'>
-          <span className='flex'>JoIn DIscord <FaDiscord className='hover:text-[#5865F2] transition-colors cursor-pointer ml-8 mt-2' /></span>
-          <span className='flex'>JoIn DIscord <FaDiscord className='hover:text-[#5865F2] transition-colors cursor-pointer ml-8 mt-2' /></span>
-          <span className='flex'>JoIn DIscord <FaDiscord className='hover:text-[#5865F2] transition-colors cursor-pointer ml-8 mt-2' /></span>
-        </h2>
-        <h2 className='slides-to-left slides-to-left-35s z-[9] text-9xl font-BecauseYouWereHome tracking-[5px] bottom-[50px] w-max [&>*]:mx-[20px]'>
-          <span className='flex'> JoIn DIscord<FaDiscord className='hover:text-[#5865F2] transition-colors cursor-pointer ml-8 mt-2' /></span>
-          <span className='flex'>JoIn DIscord <FaDiscord className='hover:text-[#5865F2] transition-colors cursor-pointer ml-8 mt-2' /></span>
-          <span className='flex'>JoIn DIscord <FaDiscord className='hover:text-[#5865F2] transition-colors cursor-pointer  ml-8 mt-2' /></span>
-        </h2>
-      </div>
     </div>
     <MyComponent />
 

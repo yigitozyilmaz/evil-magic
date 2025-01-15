@@ -66,7 +66,7 @@ export default function Privacy() {
                             <p>
                                 If you have any questions or comments about this policy, you may contact us at [Your Contact Information].
                             </p>
-                            <p>All rights reserved by Fusion Up Studio.</p>
+                            <p>All rights reserved by Evil Magic.</p>
                         </div>
                     </div>
                 </div>
