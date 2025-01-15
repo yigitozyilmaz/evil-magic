@@ -110,7 +110,6 @@ export default function Kayma() {
    
         <div className="flex justify-center 2xl:mb-42  sm:mt-[100px] 2xl:mt-0 " >
 
-          <Image className='object-contain' src='/wizard.png' width='174' height='116' />
           </div>
           <div>
           <div className='h-full w-full'>

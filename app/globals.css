@@ -3,6 +3,11 @@
 @tailwind utilities;
 
 
+
+html {
+  background-color: #00001D;
+}
+
 body {
   font-family: 'Calibri', sans-serif; /* Paragraf fontu */
 }

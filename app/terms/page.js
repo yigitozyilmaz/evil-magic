@@ -36,7 +36,7 @@ export default function Terms() {
                             </p>
                             <h2 className='text-2xl font-semibold'>4. Intellectual Property Rights</h2>
                             <p>
-                                Unless otherwise indicated, the Services and their entire contents, features, and functionality (including but not limited to all information, software, text, displays, images, video, and audio, and the design, selection, and arrangement thereof) are owned by Fusion Up Studio, its licensors, or other providers of such material and are protected by copyright, trademark, patent, trade secret, and other intellectual property or proprietary rights laws.
+                                Unless otherwise indicated, the Services and their entire contents, features, and functionality (including but not limited to all information, software, text, displays, images, video, and audio, and the design, selection, and arrangement thereof) are owned by Evil Magic, its licensors, or other providers of such material and are protected by copyright, trademark, patent, trade secret, and other intellectual property or proprietary rights laws.
                             </p>
                             <h2 className='text-2xl font-semibold'>5. Game Play and Fees</h2>
                             <p>
@@ -52,11 +52,11 @@ export default function Terms() {
                             </p>
                             <h2 className='text-2xl font-semibold'>8. Limitation of Liability</h2>
                             <p>
-                                To the fullest extent permitted by applicable law, Fusion Up Studio shall not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of profits or revenues, whether incurred directly or indirectly, or any loss of data, use, goodwill, or other intangible losses, resulting from (i) your use of the Services; (ii) any unauthorized access to or use of our servers and/or any personal information stored therein; (iii) any interruption or cessation of transmission to or from the Services; (iv) any bugs, viruses, trojan horses, or the like that may be transmitted to or through our Services by any third party; (v) any errors or omissions in any content or for any loss or damage incurred as a result of the use of any content posted, emailed, transmitted, or otherwise made available through the Services; and/or (vi) the defamatory, offensive, or illegal conduct of any third party.
+                                To the fullest extent permitted by applicable law, Evil Magic shall not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of profits or revenues, whether incurred directly or indirectly, or any loss of data, use, goodwill, or other intangible losses, resulting from (i) your use of the Services; (ii) any unauthorized access to or use of our servers and/or any personal information stored therein; (iii) any interruption or cessation of transmission to or from the Services; (iv) any bugs, viruses, trojan horses, or the like that may be transmitted to or through our Services by any third party; (v) any errors or omissions in any content or for any loss or damage incurred as a result of the use of any content posted, emailed, transmitted, or otherwise made available through the Services; and/or (vi) the defamatory, offensive, or illegal conduct of any third party.
                             </p>
                             <h2 className='text-2xl font-semibold'>9. Indemnification</h2>
                             <p>
-                                You agree to indemnify, defend, and hold harmless Fusion Up Studio and its officers, directors, employees, contractors, agents, licensors, suppliers, and affiliates from and against any claims, liabilities, damages, judgments, awards, losses, costs, expenses, or fees (including reasonable attorneys' fees) arising out of or relating to your violation of these Terms or your use of the Services, including, but not limited to, your User Contributions, any use of the Services' content, services, and products other than as expressly authorized in these Terms, or your use of any information obtained from the Services.
+                                You agree to indemnify, defend, and hold harmless Evil Magic and its officers, directors, employees, contractors, agents, licensors, suppliers, and affiliates from and against any claims, liabilities, damages, judgments, awards, losses, costs, expenses, or fees (including reasonable attorneys' fees) arising out of or relating to your violation of these Terms or your use of the Services, including, but not limited to, your User Contributions, any use of the Services' content, services, and products other than as expressly authorized in these Terms, or your use of any information obtained from the Services.
                             </p>
                             <h2 className='text-2xl font-semibold'>10. Governing Law</h2>
                             <p>
@@ -70,7 +70,7 @@ export default function Terms() {
                             <p>
                                 If you have any questions about these Terms, please contact us at [Your Contact Information].
                             </p>
-                            <p>All rights reserved by Fusion Up Studio.</p>
+                            <p>All rights reserved by Evil Magic.</p>
                         </div>
                     </div>
                 </div>

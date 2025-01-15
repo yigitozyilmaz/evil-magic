@@ -17,16 +17,15 @@ export default function Header() {
 
   const links = {
 
-    'TEAM': '/#team',
-    'FAQ': '/#freq'
+    'The Coven': '/#team',
 
   };
 
   const socials = {
     'https://x.com/evilwizardsNFT': <FaXTwitter className='hover:text-[#00ff80] transition-colors cursor-pointer' />,
-    'https://medium.com/@evilwizardsNFT': <FaMedium className='hover:text-[#00ff80] transition-colors cursor-pointer' />,
-    'https://www.youtube.com/channel/UCUu_jwb8PZDU1sDe-Nx-4YA': <FaYoutube className='hover:text-[#00ff80] transition-colors cursor-pointer' />,
-    '/discordlink': <FaDiscord className='hover:text-[#00ff80] transition-colors cursor-pointer' />
+    // 'https://medium.com/@evilwizardsNFT': <FaMedium className='hover:text-[#00ff80] transition-colors cursor-pointer' />,
+    // 'https://www.youtube.com/channel/UCUu_jwb8PZDU1sDe-Nx-4YA': <FaYoutube className='hover:text-[#00ff80] transition-colors cursor-pointer' />,
+    // '/discordlink': <FaDiscord className='hover:text-[#00ff80] transition-colors cursor-pointer' />
 
   };
 
